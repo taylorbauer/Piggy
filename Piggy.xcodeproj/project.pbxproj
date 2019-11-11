@@ -15,6 +15,7 @@
 		3449D8512379C1590013B2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */; };
 		3449D85C2379C1590013B2FA /* PiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D85B2379C1590013B2FA /* PiggyTests.swift */; };
 		3449D8672379C1590013B2FA /* PiggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8662379C1590013B2FA /* PiggyUITests.swift */; };
+		3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8742379C67A0013B2FA /* PiggyLogo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3449D8622379C1590013B2FA /* PiggyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3449D8662379C1590013B2FA /* PiggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITests.swift; sourceTree = "<group>"; };
 		3449D8682379C1590013B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3449D8742379C67A0013B2FA /* PiggyLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyLogo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				3449D8442379C1580013B2FA /* AppDelegate.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				3449D8482379C1580013B2FA /* ContentView.swift */,
+				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
 				3449D84A2379C1590013B2FA /* Assets.xcassets */,
 				3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */,
 				3449D8522379C1590013B2FA /* Info.plist */,
@@ -270,6 +273,7 @@
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				3449D8492379C1580013B2FA /* ContentView.swift in Sources */,
+				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
