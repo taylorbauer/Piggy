@@ -19,6 +19,7 @@
 		349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB40E2382F3CC004B3B8F /* Menu.swift */; };
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
 		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
+		349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4142382FCF1004B3B8F /* ItemRow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		349DB40E2382F3CC004B3B8F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		349DB4142382FCF1004B3B8F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				349DB4122382F72C004B3B8F /* Helper.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
+				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
@@ -283,6 +286,7 @@
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
+				349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */,
 				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
 				349DB4132382F72C004B3B8F /* Helper.swift in Sources */,
