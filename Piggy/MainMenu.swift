@@ -15,19 +15,28 @@ struct MainMenu: View {
     var body: some View {
         VStack {
             PiggyLogo()
+//            NavigationView {
+//                List {
+//                    ForEach(menu) { section in
+//                        Section(header: Text(section.name)) {
+//                            ForEach(section.items) { item in
+//                                ItemRow(item: item)
+//                            }
+//                        }
+//                    }
+//                    }.navigationBarTitle("Main Menu")
+//                .listStyle(GroupedListStyle())
+//            }
+            PiggyLogo()
             NavigationView {
                 List {
-                    ForEach(menu) { section in
-                        Section(header: Text(section.name)) {
-                            ForEach(section.items) { item in
-                                ItemRow(item: item)
-                            }
-                        }
+                    NavigationLink(destination: Inventory()) {
+                        Text("Inventory")
                     }
-                    }.navigationBarTitle("Main Menu")
-                .listStyle(GroupedListStyle())
+                }
             }
         }
+        
     }
 }
 

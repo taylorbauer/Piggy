@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		340D09B223888E51003DDE76 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* Inventory.swift */; };
 		3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8442379C1580013B2FA /* AppDelegate.swift */; };
 		3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8462379C1580013B2FA /* SceneDelegate.swift */; };
 		3449D8492379C1580013B2FA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8482379C1580013B2FA /* MainMenu.swift */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		340D09B123888E51003DDE76 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		3449D8412379C1580013B2FA /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3449D8442379C1580013B2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3449D8462379C1580013B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
+				340D09B123888E51003DDE76 /* Inventory.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				340D09B223888E51003DDE76 /* Inventory.swift in Sources */,
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,

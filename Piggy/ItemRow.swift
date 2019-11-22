@@ -11,6 +11,8 @@ import SwiftUI
 struct ItemRow: View {
     var item: MenuItem
     
+
+    
     var body: some View {
         NavigationLink(destination: Text(item.name)) {
             Text(item.name)
