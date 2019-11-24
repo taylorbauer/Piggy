@@ -15,26 +15,46 @@ struct MainMenu: View {
     var body: some View {
         VStack {
             PiggyLogo()
-//            NavigationView {
-//                List {
-//                    ForEach(menu) { section in
-//                        Section(header: Text(section.name)) {
-//                            ForEach(section.items) { item in
-//                                ItemRow(item: item)
-//                            }
-//                        }
-//                    }
-//                    }.navigationBarTitle("Main Menu")
-//                .listStyle(GroupedListStyle())
-//            }
-            PiggyLogo()
             NavigationView {
                 List {
-                    NavigationLink(destination: Inventory()) {
-                        Text("Inventory")
+                    Section(header: Text("Inventory")
+                        .font(.title)){
+                    NavigationLink(destination: TakeInventory()) {
+                        Text("View Current Inventory / Generate Order Reports")
+                        }
+                        NavigationLink(destination: ViewInventory()) {
+                            Text("Take Inventory")
+                        }
+                    }
+                    
+                    Section(header: Text("Recipes")
+                        .font(.title)) {
+                        NavigationLink(destination: RecipeSearch()) {
+                            Text("Find Recipes")
+                        }
+                        NavigationLink(destination: NewRecipe()) {
+                            Text("Create New Recipe")
+                        }
+                    }
+                    
+                    Section(header: Text("Business Analytics")
+                        .font(.title)) {
+                        NavigationLink(destination: BSAN()) {
+                            Text("View Business Analytics")
+                        }
+                        
+                    }
+                    
+                    
+                    Section(header: Text("About")) {
+                        NavigationLink(destination: About()) {
+                            Text("About Team 6")
+                        }
                     }
                 }
-            }
+                .navigationBarTitle("Main Menu")
+            }.navigationViewStyle(StackNavigationViewStyle())
+            .listStyle(GroupedListStyle())
         }
         
     }
@@ -43,6 +63,6 @@ struct MainMenu: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainMenu()
-            //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
+            .previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
 }

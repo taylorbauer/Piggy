@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		340D09B223888E51003DDE76 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* Inventory.swift */; };
+		340D09B223888E51003DDE76 /* TakeInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeInventory.swift */; };
 		3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8442379C1580013B2FA /* AppDelegate.swift */; };
 		3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8462379C1580013B2FA /* SceneDelegate.swift */; };
 		3449D8492379C1580013B2FA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8482379C1580013B2FA /* MainMenu.swift */; };
@@ -21,6 +21,11 @@
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
 		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
 		349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4142382FCF1004B3B8F /* ItemRow.swift */; };
+		34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD2238AD96E00156DBB /* ViewInventory.swift */; };
+		34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */; };
+		34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD6238ADA2800156DBB /* NewRecipe.swift */; };
+		34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD8238ADA3C00156DBB /* BSAN.swift */; };
+		34FE2FDB238ADA4F00156DBB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDA238ADA4F00156DBB /* About.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,7 +46,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		340D09B123888E51003DDE76 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		340D09B123888E51003DDE76 /* TakeInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeInventory.swift; sourceTree = "<group>"; };
 		3449D8412379C1580013B2FA /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3449D8442379C1580013B2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3449D8462379C1580013B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +66,11 @@
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		349DB4142382FCF1004B3B8F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		34FE2FD2238AD96E00156DBB /* ViewInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInventory.swift; sourceTree = "<group>"; };
+		34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearch.swift; sourceTree = "<group>"; };
+		34FE2FD6238ADA2800156DBB /* NewRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipe.swift; sourceTree = "<group>"; };
+		34FE2FD8238ADA3C00156DBB /* BSAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAN.swift; sourceTree = "<group>"; };
+		34FE2FDA238ADA4F00156DBB /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +125,13 @@
 				349DB4122382F72C004B3B8F /* Helper.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
+				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
+				34FE2FDA238ADA4F00156DBB /* About.swift */,
+				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
+				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
-				340D09B123888E51003DDE76 /* Inventory.swift */,
+				340D09B123888E51003DDE76 /* TakeInventory.swift */,
+				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
@@ -286,10 +301,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D09B223888E51003DDE76 /* Inventory.swift in Sources */,
+				340D09B223888E51003DDE76 /* TakeInventory.swift in Sources */,
+				34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */,
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
+				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
+				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
+				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
+				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
 				349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */,
 				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
@@ -466,6 +486,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -485,6 +506,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 0.0.1;
 				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
