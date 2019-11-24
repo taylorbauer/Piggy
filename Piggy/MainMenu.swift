@@ -17,7 +17,7 @@ struct MainMenu: View {
             PiggyLogo()
             NavigationView {
                 List {
-                    Section(header: Text("Inventory")
+                    Section(header: Text("Inventory").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                         .font(.title)){
                     NavigationLink(destination: TakeInventory()) {
                         Text("View Current Inventory / Generate Order Reports")
@@ -27,7 +27,7 @@ struct MainMenu: View {
                         }
                     }
                     
-                    Section(header: Text("Recipes")
+                    Section(header: Text("Recipes").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                         .font(.title)) {
                         NavigationLink(destination: RecipeSearch()) {
                             Text("Find Recipes")
@@ -37,7 +37,7 @@ struct MainMenu: View {
                         }
                     }
                     
-                    Section(header: Text("Business Analytics")
+                    Section(header: Text("Business Analytics").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                         .font(.title)) {
                         NavigationLink(destination: BSAN()) {
                             Text("View Business Analytics")
@@ -46,7 +46,7 @@ struct MainMenu: View {
                     }
                     
                     
-                    Section(header: Text("About")) {
+                    Section(header: Text("About").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))) {
                         NavigationLink(destination: About()) {
                             Text("About Team 6")
                         }
@@ -55,6 +55,7 @@ struct MainMenu: View {
                 .navigationBarTitle("Main Menu")
             }.navigationViewStyle(StackNavigationViewStyle())
             .listStyle(GroupedListStyle())
+            
         }
         
     }
