@@ -21,10 +21,10 @@ struct MainMenu: View {
                     //For extensibilitiy's sake, everything in this menu can be eventually reduced down to objects of ItemRow
                     Section(header: Text("Inventory").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                         .font(.title)){
-                    NavigationLink(destination: TakeInventory()) {
+                    NavigationLink(destination: ViewInventory()) {
                         Text("View Current Inventory / Generate Order Reports")
                         }
-                        NavigationLink(destination: ViewInventory()) {
+                        NavigationLink(destination: TakeInventory()) {
                             Text("Take Inventory")
                         }
                     }
