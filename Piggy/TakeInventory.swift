@@ -10,8 +10,9 @@ import SwiftUI
 
 struct TakeInventory: View {
     let item = Bundle.main.decode([InventoryItem].self, from: "inventory.json")
+    var nums = [0...20]
     var body: some View {
-        VStack(alignment: .leading) {
+        VStack() {
             Text("New Inventory Count")
                 .font(.title)
                 .foregroundColor(Color.pink)
@@ -26,14 +27,15 @@ struct TakeInventory: View {
                                 .font(.headline)
                             
                             Spacer()
-        
-                            Picker(selection: /*@START_MENU_TOKEN@*/.constant(1)/*@END_MENU_TOKEN@*/, label: Text("Count")) {
-                                Text("1").tag(1)
-                                Text("2").tag(2)
-                                Text("3").tag(3)
-                                Text("4").tag(4)
+                            
+                            Picker(selection: .constant(bottle.lastCount), label: Text("Count")) {
+                                ForEach(0..<100) { number in
+                                    Text("\(number)")
+                                }
+                                
+                                
                             }
-                            .pickerStyle( DefaultPickerStyle())
+                            .pickerStyle( WheelPickerStyle())
                             .padding()
                             .frame(width: 0.0)
                             
