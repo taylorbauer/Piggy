@@ -1,5 +1,5 @@
 //
-//  TakeInventory.swift
+//  TakeLiquorInventory.swift
 //  Piggy
 //
 //  Created by Taylor Bauer on 11/22/19.
@@ -8,7 +8,7 @@
 
 import SwiftUI
 
-struct TakeInventory: View {
+struct TakeLiquorInventory: View {
     let item = Bundle.main.decode([InventoryItem].self, from: "inventory.json")
     var nums = [0...20]
     var body: some View {
@@ -51,9 +51,9 @@ struct TakeInventory: View {
         }
     }
 
-struct TakeInventory_Previews: PreviewProvider {
+struct TakeLiquorInventory_Previews: PreviewProvider {
     static var previews: some View {
-        TakeInventory()
+        TakeLiquorInventory()
         .previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
 }

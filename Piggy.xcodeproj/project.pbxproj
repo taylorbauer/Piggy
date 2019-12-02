@@ -7,7 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		340D09B223888E51003DDE76 /* TakeInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeInventory.swift */; };
+		340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */; };
+		3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BA2395681400B501C0 /* NewInventoryPage.swift */; };
+		3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */; };
+		3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */; };
 		3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8442379C1580013B2FA /* AppDelegate.swift */; };
 		3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8462379C1580013B2FA /* SceneDelegate.swift */; };
 		3449D8492379C1580013B2FA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8482379C1580013B2FA /* MainMenu.swift */; };
@@ -48,7 +51,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		340D09B123888E51003DDE76 /* TakeInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeInventory.swift; sourceTree = "<group>"; };
+		340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeLiquorInventory.swift; sourceTree = "<group>"; };
+		3424E1BA2395681400B501C0 /* NewInventoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInventoryPage.swift; sourceTree = "<group>"; };
+		3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInventoryCount.swift; sourceTree = "<group>"; };
+		3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCountMainPage.swift; sourceTree = "<group>"; };
 		3449D8412379C1580013B2FA /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3449D8442379C1580013B2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3449D8462379C1580013B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -130,16 +136,19 @@
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
+				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
-				340D09B123888E51003DDE76 /* TakeInventory.swift */,
+				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
 				34FE2FDC238C36EC00156DBB /* inventory.json */,
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
+				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
 				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
+				3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
 				3449D84A2379C1590013B2FA /* Assets.xcassets */,
 				3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */,
@@ -308,18 +317,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				340D09B223888E51003DDE76 /* TakeInventory.swift in Sources */,
+				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
+				340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */,
 				34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */,
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
+				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
 				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
 				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
 				349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */,
 				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
+				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
 				349DB4132382F72C004B3B8F /* Helper.swift in Sources */,
 			);
