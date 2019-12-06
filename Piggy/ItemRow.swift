@@ -6,6 +6,11 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+//  This is where we were originally formatting the menu item views
+//  in things like MainMenu, but stopped once we stopped using
+//  menu.json.  Eventually this can be used for something else,
+//  most likely for specific recipes.
+
 import SwiftUI
 
 struct ItemRow: View {

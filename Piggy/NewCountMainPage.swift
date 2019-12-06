@@ -11,6 +11,8 @@
 // lead the user to TakeLiquorInventory pages, whre they will
 // perform the actual count.
 
+//  It is called on by NewInventoryPage
+
 import SwiftUI
 
 struct NewCountMainPage: View {

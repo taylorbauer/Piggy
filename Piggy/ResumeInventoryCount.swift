@@ -6,6 +6,10 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+//  Once we have an ability to save inventory counts in progress,
+//  this is where users will be able to resume them.
+//  It is called on by NewInventoryPage.
+
 import SwiftUI
 
 struct ResumeInventoryCount: View {

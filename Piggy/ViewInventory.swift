@@ -6,6 +6,10 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+//  This is where the user can look up previous inventory counts and
+//  associated order reports.
+//  It is called on by MainMenu.
+
 import SwiftUI
 
 struct ViewInventory: View {

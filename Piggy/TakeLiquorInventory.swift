@@ -6,7 +6,16 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
-// This is the page that will contain all the actual tools for recording inventory
+//  This is the page that will contain all the actual tools for
+//  recording inventory.  It is called on by NewInventoryPage.
+
+//  Right now it doesn't store the data and it is not very pretty.
+//  It is more a proof of concept for once we actually decide on a
+//  scheme.
+
+//  There is an issue generating as many pickerwheels as this menu
+//  currently generates.  If this list gets long enough it eventually
+//  crashes.
 
 import SwiftUI
 

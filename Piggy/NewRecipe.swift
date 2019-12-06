@@ -6,6 +6,9 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This is where the user will create new recipes
+// As of right now, it is called on by MainMenu
+
 import SwiftUI
 
 struct NewRecipe: View {

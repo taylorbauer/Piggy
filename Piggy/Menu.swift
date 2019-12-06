@@ -6,6 +6,10 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+//  This is what was generating the MenuItems for ItemRow.swift.
+//  It is currently not being used but will probably be used for
+//  recipes in the future.
+
 import SwiftUI
 
 struct MenuSection: Codable, Identifiable {
