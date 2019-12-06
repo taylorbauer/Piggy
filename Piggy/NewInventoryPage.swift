@@ -6,6 +6,9 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This is whre the user lands after clicking "New Inventory Count"
+// on the main menu.  It allows the user to 
+
 import SwiftUI
 
 struct NewInventoryPage: View {
@@ -30,17 +33,26 @@ struct NewInventoryPage: View {
                                     Text("Resume Previously Started Inventory Count")
                                 }
                         }
+                        Section(header: Text("Inventory Management")
+                            .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                            .font(.title)){
+                        NavigationLink(destination: NewCountMainPage()) {
+                            Text("Adjust Pars / Edit Inventory")
+                        }
+                    }
                     }
                     Spacer()
                     Image("point up")
                         .resizable()
                         .frame(width:256, height: 256)
-                }
                 
-            }.navigationViewStyle(StackNavigationViewStyle())
+                
+            }   .navigationBarTitle(Text("Inventory"))
+                .navigationViewStyle(StackNavigationViewStyle())
                 .listStyle(GroupedListStyle())
             
         }
+    }
     }
     
     

@@ -6,6 +6,8 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This will be the main landing page for business analytics
+
 import SwiftUI
 
 struct BSAN: View {

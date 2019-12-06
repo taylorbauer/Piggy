@@ -7,6 +7,9 @@
 //
 
 // Main Menu
+// This page is where the app opens up to.
+// It leads the user to the main landing pages for the different
+// functions of our app.
 
 import SwiftUI
 

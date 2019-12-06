@@ -6,6 +6,11 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This is the main page for making a new inventory count
+// It lists the different categories of inventory, which will
+// lead the user to TakeLiquorInventory pages, whre they will
+// perform the actual count.
+
 import SwiftUI
 
 struct NewCountMainPage: View {
@@ -31,6 +36,14 @@ struct NewCountMainPage: View {
                                     .frame(width: 64, height: 64)
                                 NavigationLink(destination: TakeLiquorInventory()) {
                                     Text("Beer")
+                                }
+                            }
+                            HStack {
+                                Image("liquor 2")
+                                    .resizable()
+                                    .frame(width: 64, height: 64)
+                                NavigationLink(destination: TakeLiquorInventory()) {
+                                    Text("Wine")
                                 }
                             }
                             HStack {

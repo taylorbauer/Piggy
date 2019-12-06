@@ -6,6 +6,8 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This is the page that will contain all the actual tools for recording inventory
+
 import SwiftUI
 
 struct TakeLiquorInventory: View {
