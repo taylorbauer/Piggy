@@ -36,7 +36,7 @@ struct NewInventoryPage: View {
                         Section(header: Text("Inventory Management")
                             .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)){
-                        NavigationLink(destination: NewCountMainPage()) {
+                        NavigationLink(destination: EditInventory()) {
                             Text("Adjust Pars / Edit Inventory")
                         }
                     }

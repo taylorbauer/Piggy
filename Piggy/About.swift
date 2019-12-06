@@ -6,6 +6,8 @@
 //  Copyright © 2019 Group 6. All rights reserved.
 //
 
+// This page will have information about our team
+
 import SwiftUI
 
 struct About: View {

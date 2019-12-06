@@ -20,6 +20,7 @@
 		3449D85C2379C1590013B2FA /* PiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D85B2379C1590013B2FA /* PiggyTests.swift */; };
 		3449D8672379C1590013B2FA /* PiggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8662379C1590013B2FA /* PiggyUITests.swift */; };
 		3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8742379C67A0013B2FA /* PiggyLogo.swift */; };
+		3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484ACF3239AEEED008F2334 /* EditInventory.swift */; };
 		349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB40E2382F3CC004B3B8F /* Menu.swift */; };
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
 		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
@@ -70,6 +71,7 @@
 		3449D8662379C1590013B2FA /* PiggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITests.swift; sourceTree = "<group>"; };
 		3449D8682379C1590013B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3449D8742379C67A0013B2FA /* PiggyLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyLogo.swift; sourceTree = "<group>"; };
+		3484ACF3239AEEED008F2334 /* EditInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInventory.swift; sourceTree = "<group>"; };
 		349DB40E2382F3CC004B3B8F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
@@ -137,6 +139,7 @@
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
 				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
+				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
@@ -323,6 +326,7 @@
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
+				3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */,
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
