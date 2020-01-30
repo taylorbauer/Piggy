@@ -13,7 +13,7 @@
 
 import SwiftUI
 
-struct InventoryItem: Codable, Identifiable, Hashable {
+struct InventoryItem: Codable, Identifiable {
     var id: UUID
     var name: String
     var lastCount: Int

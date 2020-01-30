@@ -20,9 +20,11 @@
 import SwiftUI
 
 struct TakeLiquorInventory: View {
-    let item = Bundle.main.decode([InventoryItem].self, from: "inventory.json")
-    @State private var age = 18
-    var nums = [0...20]
+    
+    // Decode inventory.json to create InventoryItem objects
+    // This list of objects is called "items"
+    let items = Bundle.main.decode([InventoryItem].self, from: "inventory.json")
+
     var body: some View {
         VStack() {
             Text("New Inventory Count")
@@ -30,28 +32,23 @@ struct TakeLiquorInventory: View {
                 .foregroundColor(Color.pink)
                 .multilineTextAlignment(.leading)
                 .padding(.leading)
+            
             List {
-                ForEach(item, id: \.self) { bottle in
+                // Here, "bottle" is each instance of class InventoryItem
+                // Now, "items" is a list of "bottle"s that we use to generate the views
+                ForEach(items) { bottle in
                     VStack(alignment: .leading) {
+                        Text(bottle.name)
+                            .font(.headline)
                         HStack {
-                            Spacer()
-                            Text(bottle.name)
-                                .font(.headline)
                             
-                            Spacer()
-                            
-                            Stepper("Enter your age", value: self.$age, in: 0...130)
-                            Text("Your age is: \(self.age)")
-                            
-//                            Picker(selection: .constant(bottle.lastCount), label: Text("Count")) {
-//                                ForEach(0..<100) { number in
-//                                    Text("\(number)")
-//                                }
-//                            }
-//                            .pickerStyle( WheelPickerStyle())
-//                            .padding()
-//                            .frame(width: 0.0)
-                            
+                            // InventoryStepper is the view that contains the
+                            // actual counter for the items.
+                            // We will pull the result out of the "current"
+                            // variable in this view when we implement our database
+                            InventoryStepper(itemType: bottle)
+                            // This is a little ugly and we can pretty it up later
+
                             Spacer()
                         }
                         Spacer()
