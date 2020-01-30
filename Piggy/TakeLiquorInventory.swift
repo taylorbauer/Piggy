@@ -21,6 +21,7 @@ import SwiftUI
 
 struct TakeLiquorInventory: View {
     let item = Bundle.main.decode([InventoryItem].self, from: "inventory.json")
+    @State private var age = 18
     var nums = [0...20]
     var body: some View {
         VStack() {
@@ -30,7 +31,7 @@ struct TakeLiquorInventory: View {
                 .multilineTextAlignment(.leading)
                 .padding(.leading)
             List {
-                ForEach(item) { bottle in
+                ForEach(item, id: \.self) { bottle in
                     VStack(alignment: .leading) {
                         HStack {
                             Spacer()
@@ -39,16 +40,17 @@ struct TakeLiquorInventory: View {
                             
                             Spacer()
                             
-                            Picker(selection: .constant(bottle.lastCount), label: Text("Count")) {
-                                ForEach(0..<100) { number in
-                                    Text("\(number)")
-                                }
-                                
-                                
-                            }
-                            .pickerStyle( WheelPickerStyle())
-                            .padding()
-                            .frame(width: 0.0)
+                            Stepper("Enter your age", value: self.$age, in: 0...130)
+                            Text("Your age is: \(self.age)")
+                            
+//                            Picker(selection: .constant(bottle.lastCount), label: Text("Count")) {
+//                                ForEach(0..<100) { number in
+//                                    Text("\(number)")
+//                                }
+//                            }
+//                            .pickerStyle( WheelPickerStyle())
+//                            .padding()
+//                            .frame(width: 0.0)
                             
                             Spacer()
                         }
@@ -65,6 +67,6 @@ struct TakeLiquorInventory: View {
 struct TakeLiquorInventory_Previews: PreviewProvider {
     static var previews: some View {
         TakeLiquorInventory()
-        .previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
+        //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
 }

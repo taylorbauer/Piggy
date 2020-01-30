@@ -71,6 +71,6 @@ struct MainMenu: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainMenu()
-            .previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
+            //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
 }
