@@ -55,11 +55,34 @@ struct TakeLiquorInventory: View {
                         Text("Last \(bottle.name) Count: \(bottle.lastCount)")
                     }
                     }
+                HStack {
+                    Spacer()
+                    Button(action: {
+                        print("Inventory submitted (not really)")
+                    }) {
+                        Text("SUBMIT INVENTORY")
+                            .fontWeight(.bold)
+                            .font(.title)
+                            .padding()
+                            .background(Color.pink)
+                            .cornerRadius(30)
+                            .foregroundColor(.white)
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 30)
+                                    .stroke(Color.pink, lineWidth: 5)
+                        )
+                    }
+                    .padding()
+                    Spacer()
                 }
-            
+                
+
+                }
+                }
             }
-        }
-    }
+}
+            
 
 struct TakeLiquorInventory_Previews: PreviewProvider {
     static var previews: some View {
