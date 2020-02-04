@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */; };
+		34228BF523E9D5FC00CACF6A /* TakeBeerInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34228BF423E9D5FC00CACF6A /* TakeBeerInventory.swift */; };
+		34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34228BF623E9D6C800CACF6A /* beer_inventory.json */; };
 		3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BA2395681400B501C0 /* NewInventoryPage.swift */; };
 		3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */; };
 		3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */; };
@@ -31,7 +33,7 @@
 		34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD6238ADA2800156DBB /* NewRecipe.swift */; };
 		34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD8238ADA3C00156DBB /* BSAN.swift */; };
 		34FE2FDB238ADA4F00156DBB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDA238ADA4F00156DBB /* About.swift */; };
-		34FE2FDD238C36EC00156DBB /* inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2FDC238C36EC00156DBB /* inventory.json */; };
+		34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2FDC238C36EC00156DBB /* liquor_inventory.json */; };
 		34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDE238C380300156DBB /* InventoryItem.swift */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +56,8 @@
 
 /* Begin PBXFileReference section */
 		340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeLiquorInventory.swift; sourceTree = "<group>"; };
+		34228BF423E9D5FC00CACF6A /* TakeBeerInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeBeerInventory.swift; sourceTree = "<group>"; };
+		34228BF623E9D6C800CACF6A /* beer_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beer_inventory.json; sourceTree = "<group>"; };
 		3424E1BA2395681400B501C0 /* NewInventoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInventoryPage.swift; sourceTree = "<group>"; };
 		3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInventoryCount.swift; sourceTree = "<group>"; };
 		3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCountMainPage.swift; sourceTree = "<group>"; };
@@ -83,7 +87,7 @@
 		34FE2FD6238ADA2800156DBB /* NewRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipe.swift; sourceTree = "<group>"; };
 		34FE2FD8238ADA3C00156DBB /* BSAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAN.swift; sourceTree = "<group>"; };
 		34FE2FDA238ADA4F00156DBB /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
-		34FE2FDC238C36EC00156DBB /* inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = inventory.json; sourceTree = "<group>"; };
+		34FE2FDC238C36EC00156DBB /* liquor_inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = liquor_inventory.json; sourceTree = "<group>"; };
 		34FE2FDE238C380300156DBB /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -147,8 +151,10 @@
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
 				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
+				34228BF423E9D5FC00CACF6A /* TakeBeerInventory.swift */,
 				345D987623E35C040008CE1C /* InventoryStepper.swift */,
-				34FE2FDC238C36EC00156DBB /* inventory.json */,
+				34228BF623E9D6C800CACF6A /* beer_inventory.json */,
+				34FE2FDC238C36EC00156DBB /* liquor_inventory.json */,
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
@@ -296,7 +302,8 @@
 			files = (
 				3449D8512379C1590013B2FA /* LaunchScreen.storyboard in Resources */,
 				3449D84E2379C1590013B2FA /* Preview Assets.xcassets in Resources */,
-				34FE2FDD238C36EC00156DBB /* inventory.json in Resources */,
+				34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */,
+				34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */,
 				349DB4112382F4DF004B3B8F /* menu.json in Resources */,
 				3449D84B2379C1590013B2FA /* Assets.xcassets in Resources */,
 			);
@@ -334,6 +341,7 @@
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
+				34228BF523E9D5FC00CACF6A /* TakeBeerInventory.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
 				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
 				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
