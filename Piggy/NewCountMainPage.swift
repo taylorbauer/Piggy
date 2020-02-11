@@ -36,7 +36,7 @@ struct NewCountMainPage: View {
                                 Image("liquor 1")
                                     .resizable()
                                     .frame(width: 64, height: 64)
-                                NavigationLink(destination: TakeLiquorInventory()) {
+                                NavigationLink(destination: TakeBeerInventory()) {
                                     Text("Beer")
                                 }
                             }
@@ -44,7 +44,7 @@ struct NewCountMainPage: View {
                                 Image("liquor 2")
                                     .resizable()
                                     .frame(width: 64, height: 64)
-                                NavigationLink(destination: TakeLiquorInventory()) {
+                                NavigationLink(destination: TakeWineInventory()) {
                                     Text("Wine")
                                 }
                             }
@@ -53,7 +53,7 @@ struct NewCountMainPage: View {
                                     .resizable()
                                     .frame(width: 64, height: 64)
                                 NavigationLink(destination: TakeLiquorInventory()) {
-                                    Text("Groceries")
+                                    Text("Groceries (TODO)")
                                 }
                             }
                             HStack {
@@ -61,7 +61,7 @@ struct NewCountMainPage: View {
                                     .resizable()
                                     .frame(width: 64, height: 64)
                                 NavigationLink(destination: TakeLiquorInventory()) {
-                                    Text("Glassware / Paper Goods")
+                                    Text("Glassware / Paper Goods (TODO)")
                                 }
                             }
                     }

@@ -36,7 +36,7 @@ struct MainMenu: View {
                         Section(header: Text("Recipes").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)) {
                             NavigationLink(destination: RecipeSearch()) {
-                                Text("Find Recipes")
+                                Text("View Recipes")
                             }
                             NavigationLink(destination: NewRecipe()) {
                                 Text("Create New Recipe")

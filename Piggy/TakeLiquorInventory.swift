@@ -27,7 +27,7 @@ struct TakeLiquorInventory: View {
 
     var body: some View {
         VStack() {
-            Text("New Inventory Count")
+            Text("New Liquor Inventory Count")
                 .font(.title)
                 .foregroundColor(Color.pink)
                 .multilineTextAlignment(.leading)
@@ -61,6 +61,23 @@ struct TakeLiquorInventory: View {
                         print("Inventory submitted (not really)")
                     }) {
                         Text("SUBMIT LIQUOR INVENTORY")
+                            .fontWeight(.bold)
+                            .font(.title)
+                            .padding()
+                            .background(Color.pink)
+                            .cornerRadius(30)
+                            .foregroundColor(.white)
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 30)
+                                    .stroke(Color.pink, lineWidth: 5)
+                        )
+                    }
+                    .padding()
+                    Button(action: {
+                        print("Saved for later (not really)")
+                    }){
+                        Text("Save for later")
                             .fontWeight(.bold)
                             .font(.title)
                             .padding()

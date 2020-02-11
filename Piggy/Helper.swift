@@ -5,6 +5,9 @@
 //  Created by Paul Hudson on 23/06/2019.
 //  Copyright © 2019 Hacking with Swift. All rights reserved.
 //
+//
+//I imported this to help us decode/store items from json files, so far this is only used for inventory pages
+//
 
 import UIKit
 
