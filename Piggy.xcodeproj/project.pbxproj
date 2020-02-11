@@ -25,6 +25,9 @@
 		3462BF8323F23D7000E7640E /* wine_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 3462BF8223F23D7000E7640E /* wine_inventory.json */; };
 		3462BF8523F23E3400E7640E /* TakeWineInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8423F23E3400E7640E /* TakeWineInventory.swift */; };
 		3462BF8723F23E6900E7640E /* TakeBeerInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */; };
+		3462BF8923F2409F00E7640E /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8823F2409F00E7640E /* RecipeCard.swift */; };
+		3462BF8B23F2417C00E7640E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8A23F2417C00E7640E /* Recipe.swift */; };
+		3462BF8D23F2435000E7640E /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3462BF8C23F2435000E7640E /* recipes.json */; };
 		3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484ACF3239AEEED008F2334 /* EditInventory.swift */; };
 		349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB40E2382F3CC004B3B8F /* Menu.swift */; };
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
@@ -81,6 +84,9 @@
 		3462BF8223F23D7000E7640E /* wine_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wine_inventory.json; sourceTree = "<group>"; };
 		3462BF8423F23E3400E7640E /* TakeWineInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWineInventory.swift; sourceTree = "<group>"; };
 		3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeBeerInventory.swift; sourceTree = "<group>"; };
+		3462BF8823F2409F00E7640E /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		3462BF8A23F2417C00E7640E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		3462BF8C23F2435000E7640E /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
 		3484ACF3239AEEED008F2334 /* EditInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInventory.swift; sourceTree = "<group>"; };
 		349DB40E2382F3CC004B3B8F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
@@ -143,17 +149,19 @@
 		3449D8432379C1580013B2FA /* Piggy */ = {
 			isa = PBXGroup;
 			children = (
+				3449D8482379C1580013B2FA /* MainMenu.swift */,
+				3462BF8823F2409F00E7640E /* RecipeCard.swift */,
 				3449D8442379C1580013B2FA /* AppDelegate.swift */,
 				349DB4122382F72C004B3B8F /* Helper.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
-				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
 				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
 				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
-				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
+				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
+				3462BF8C23F2435000E7640E /* recipes.json */,
 				3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */,
 				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
 				3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */,
@@ -165,6 +173,7 @@
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
+				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
@@ -313,6 +322,7 @@
 				34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */,
 				349DB4112382F4DF004B3B8F /* menu.json in Resources */,
 				3449D84B2379C1590013B2FA /* Assets.xcassets in Resources */,
+				3462BF8D23F2435000E7640E /* recipes.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -346,6 +356,8 @@
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
 				3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */,
+				3462BF8923F2409F00E7640E /* RecipeCard.swift in Sources */,
+				3462BF8B23F2417C00E7640E /* Recipe.swift in Sources */,
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
