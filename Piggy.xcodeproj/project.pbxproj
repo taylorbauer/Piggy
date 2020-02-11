@@ -40,6 +40,8 @@
 		34FE2FDB238ADA4F00156DBB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDA238ADA4F00156DBB /* About.swift */; };
 		34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2FDC238C36EC00156DBB /* liquor_inventory.json */; };
 		34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDE238C380300156DBB /* InventoryItem.swift */; };
+		868DA9CB23F316BA00384235 /* Alcohol_Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DA9CA23F316BA00384235 /* Alcohol_Inventory.swift */; };
+		868DA9CD23F31A8D00384235 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DA9CC23F31A8D00384235 /* LocalDataBase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +101,8 @@
 		34FE2FDA238ADA4F00156DBB /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
 		34FE2FDC238C36EC00156DBB /* liquor_inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = liquor_inventory.json; sourceTree = "<group>"; };
 		34FE2FDE238C380300156DBB /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+		868DA9CA23F316BA00384235 /* Alcohol_Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alcohol_Inventory.swift; sourceTree = "<group>"; };
+		868DA9CC23F31A8D00384235 /* LocalDataBase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +159,8 @@
 				349DB4122382F72C004B3B8F /* Helper.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
+				868DA9CA23F316BA00384235 /* Alcohol_Inventory.swift */,
+				868DA9CC23F31A8D00384235 /* LocalDataBase.swift */,
 				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
 				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
@@ -347,7 +353,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				868DA9CD23F31A8D00384235 /* LocalDataBase.swift in Sources */,
 				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
+				868DA9CB23F316BA00384235 /* Alcohol_Inventory.swift in Sources */,
 				340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */,
 				345D987723E35C040008CE1C /* InventoryStepper.swift in Sources */,
 				34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */,
