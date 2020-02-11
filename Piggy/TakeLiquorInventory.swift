@@ -74,6 +74,23 @@ struct TakeLiquorInventory: View {
                         )
                     }
                     .padding()
+                    Button(action: {
+                        print("Saved for later (not really)")
+                    }){
+                        Text("Save for later")
+                            .fontWeight(.bold)
+                            .font(.title)
+                            .padding()
+                            .background(Color.pink)
+                            .cornerRadius(30)
+                            .foregroundColor(.white)
+                            .padding(10)
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 30)
+                                    .stroke(Color.pink, lineWidth: 5)
+                        )
+                    }
+                    .padding()
                     Spacer()
                 }
                 
