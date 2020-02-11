@@ -17,7 +17,7 @@ struct TakeBeerInventory: View {
 
     var body: some View {
         VStack() {
-            Text("New Inventory Count")
+            Text("New Beer Inventory Count")
                 .font(.title)
                 .foregroundColor(Color.pink)
                 .multilineTextAlignment(.leading)
