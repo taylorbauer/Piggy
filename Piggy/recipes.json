@@ -1,14 +1,5 @@
 [
   {
-    "id": "24430496-f857-45f7-b710-3f3695fa8fe3",
-    "name": "Old Fashioned",
-    "method": "Stirred",
-    "glass": "Rocks",
-    "ingredientCount" : 5,
-    "ingredients": [["2 oz", "Bourbon"], ["1/4 oz", "Raw simple"], ["3 shakes", "Angostura Bitters"], ["2 shakes", "Peycheaud's Bitters"], ["2 shakes", "Orange Bitters"]],
-    "garnish" : "Large orange thumb"
-  },
-  {
     "id": "f8fda468-6674-4120-91c8-5f63df314813",
     "name": "Daiquiri",
     "method": "Shaken",
@@ -18,15 +9,6 @@
     "garnish" : "Lime twist"
   },
   {
-    "id": "64ea7809-8a5b-4a6c-a5bb-9e8992768cc4",
-    "name": "Negroni",
-    "method": "Stirred",
-    "glass": "Rocks",
-    "ingredientCount" : 3,
-    "ingredients": [["1 oz", "Campari"], ["1 oz", "Gin"], ["1 oz", "Sweet Vermouth"]],
-    "garnish" : "Lemon thumb"
-  },
-  {
     "id": "9aa8e091-a149-464b-a406-005955dff774",
     "name": "Margarita",
     "method": "Shaken",
@@ -34,6 +16,23 @@
     "ingredientCount" : 4,
     "ingredients": [["2 oz", "Tequila blanco"], ["1 oz", "Lime"], ["1/4 oz", "Simple"], ["3/4 oz", "Triple sec"]],
     "garnish" : "Lime wedge"
+  },
+  {
+    "id": "24430496-f857-45f7-b710-3f3695fa8fe3",
+    "name": "Old Fashioned",
+    "method": "Stirred",
+    "glass": "Rocks",
+    "ingredientCount" : 5,
+    "ingredients": [["2 oz", "Bourbon"], ["1/4 oz", "Raw simple"], ["3 shakes", "Angostura Bitters"], ["2 shakes", "Peycheaud's Bitters"], ["2 shakes", "Orange Bitters"]],
+    "garnish" : "Large orange thumb"
+  },
+  {
+    "id": "64ea7809-8a5b-4a6c-a5bb-9e8992768cc4",
+    "name": "Negroni",
+    "method": "Stirred",
+    "glass": "Rocks",
+    "ingredientCount" : 3,
+    "ingredients": [["1 oz", "Campari"], ["1 oz", "Gin"], ["1 oz", "Sweet Vermouth"]],
+    "garnish" : "Lemon thumb"
   }
-  
 ]

@@ -13,6 +13,9 @@ import SwiftUI
 
 struct RecipeSearch: View {
     let recipes = Bundle.main.decode([Recipe].self, from: "recipes.json")
+        .sorted {
+            $0.name < $1.name
+        }
     var body: some View {
         VStack {
             Text("Currently Stored Recipes")

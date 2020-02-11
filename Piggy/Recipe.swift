@@ -21,4 +21,13 @@ struct Recipe: Codable, Identifiable {
     var ingredientCount: Int
     var ingredients: [[String]]
     var garnish: String
+    init() {
+        self.id = UUID(uuidString: "ff53fbdf-e96c-40be-a214-eb522900e251")!
+        self.name = "DEFAULT COCKTAIL"
+        self.method = "DEFAULT METHOD"
+        self.glass = "DEFAULT GLASS"
+        self.ingredientCount = 0
+        self.ingredients = [[]]
+        self.garnish = "DEFAULT GARNISH"
+    }
 }
