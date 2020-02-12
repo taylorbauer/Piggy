@@ -26,7 +26,7 @@ struct MainMenu: View {
                         Section(header: Text("Inventory").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)){
                         NavigationLink(destination: ViewInventory()) {
-                            Text("View Current Inventory / Generate Order Reports")
+                            Text("View Current Inventory / Order Reports \n(🚧UNDER CONSTRUCTION👷)")
                             }
                             NavigationLink(destination: NewInventoryPage()) {
                                 Text("Take Inventory")
@@ -39,14 +39,14 @@ struct MainMenu: View {
                                 Text("View Recipes")
                             }
                             NavigationLink(destination: NewRecipe()) {
-                                Text("Create New Recipe")
+                                Text("Create New Recipe\n(👷UNDER CONSTRUCTION🚧)")
                             }
                         }
                         
                         Section(header: Text("Business Analytics").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)) {
                             NavigationLink(destination: BSAN()) {
-                                Text("View Business Analytics")
+                                Text("View Business Analytics\n(🚧UNDER CONSTRUCTION👷)")
                             }
                             
                         }
