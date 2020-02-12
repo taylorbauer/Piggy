@@ -6,7 +6,7 @@
 //  Copyright © 2019 Hacking with Swift. All rights reserved.
 //
 //
-//I imported this to help us decode/store items from json files, so far this is only used for inventory pages
+//I imported this to help us decode/store items from json files, so far this is only used for inventory and recipe pages
 //
 
 import UIKit
