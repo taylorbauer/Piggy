@@ -288,6 +288,7 @@
 				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
+				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				3462BF8C23F2435000E7640E /* recipes.json */,
@@ -303,7 +304,6 @@
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
-				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
@@ -470,12 +470,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
-					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
 					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
+					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -817,6 +817,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Piggy/Piggy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";
@@ -843,6 +844,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = Piggy/Piggy.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";

@@ -54,7 +54,7 @@ struct TakeBeerInventory: View {
                             .padding(10)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 30)
-                                    .stroke(Color.pink, lineWidth: 5)
+                                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5)
                         )
                     }
                     .padding()
@@ -71,7 +71,7 @@ struct TakeBeerInventory: View {
                             .padding(10)
                             .overlay(
                                 RoundedRectangle(cornerRadius: 30)
-                                    .stroke(Color.pink, lineWidth: 5)
+                                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5)
                         )
                     }
                     .padding()

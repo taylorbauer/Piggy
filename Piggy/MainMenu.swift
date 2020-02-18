@@ -39,7 +39,7 @@ struct MainMenu: View {
                                 Text("View Recipes")
                             }
                             NavigationLink(destination: NewRecipe()) {
-                                Text("Create New Recipe\n(👷UNDER CONSTRUCTION🚧)")
+                                Text("Create New Recipe")
                             }
                         }
                         
