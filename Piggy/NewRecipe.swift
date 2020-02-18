@@ -5,9 +5,12 @@
 //  Created by Taylor Bauer on 11/24/19.
 //  Copyright © 2019 Group 6. All rights reserved.
 //
-
+//
 // This is where the user will create new recipes
 // As of right now, it is called on by MainMenu
+//
+// As of 2/18 this is all strings I will update it later this week/next!! -TB
+//
 
 import SwiftUI
 
