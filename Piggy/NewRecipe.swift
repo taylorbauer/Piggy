@@ -14,7 +14,9 @@ import SwiftUI
 struct NewRecipe: View {
     var body: some View {
         VStack {
-            Text("This is the main menu for creating new recipes")
+            Text("Create New Recipe")
+                .font(.title)
+                .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
             Spacer()
         }
     }

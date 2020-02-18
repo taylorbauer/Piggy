@@ -17,7 +17,7 @@ struct TakeWineInventory: View {
          VStack() {
              Text("New Wine Inventory Count")
                  .font(.title)
-                 .foregroundColor(Color.pink)
+                 .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                  .multilineTextAlignment(.leading)
                  .padding(.leading)
              
@@ -46,7 +46,7 @@ struct TakeWineInventory: View {
                              .fontWeight(.bold)
                              .font(.title)
                              .padding()
-                             .background(Color.pink)
+                             .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                              .cornerRadius(30)
                              .foregroundColor(.white)
                              .padding(10)
@@ -63,7 +63,7 @@ struct TakeWineInventory: View {
                             .fontWeight(.bold)
                             .font(.title)
                             .padding()
-                            .background(Color.pink)
+                            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .cornerRadius(30)
                             .foregroundColor(.white)
                             .padding(10)
