@@ -24,6 +24,7 @@ struct NewRecipe: View {
     @State private var tempIngredient2: String = "Ingredient 2"
     @State private var tempIngredient3: String = "Ingredient 3"
     @State private var tempIngredient4: String = "Ingredient 4"
+    @State var ingredientCount: Int = 4
     var body: some View {
         VStack(alignment: .leading) {
             Text("Create New Recipe")
@@ -52,8 +53,19 @@ struct NewRecipe: View {
                 TextField("Garnish", text: $tempGlass)
                     .padding()
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+                VStack(alignment: .leading) {
                 Text("Ingredients: ")
                     .font(.headline)
+                HStack {
+                    Text("\(ingredientCount)")
+                    Stepper("", value: $ingredientCount)
+                    Spacer()
+                    Text("Add/Remove")
+                    Spacer()
+                    
+                }
+                }
+                
                 VStack {
                     TextField("Ingredient 1", text: $tempIngredient1)
                         .padding()
@@ -82,8 +94,7 @@ struct NewRecipe: View {
                 }
             }
         }
-        .padding()
-    
+        .padding()    
     }
 }
 
