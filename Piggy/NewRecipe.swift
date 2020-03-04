@@ -24,6 +24,19 @@ struct NewRecipe: View {
     @State private var tempIngredient2: String = "Ingredient 2"
     @State private var tempIngredient3: String = "Ingredient 3"
     @State private var tempIngredient4: String = "Ingredient 4"
+//    @State var ingredient1: Ingredient = Ingredient()
+//    @State var ingredient2: Ingredient = Ingredient()
+//    @State var ingredient3: Ingredient = Ingredient()
+//    @State var ingredient4: Ingredient = Ingredient()
+//    @State var ingredient5: Ingredient = Ingredient()
+//    @State var ingredient6: Ingredient = Ingredient()
+//    @State var ingredient7: Ingredient = Ingredient()
+//    @State var ingredient8: Ingredient = Ingredient()
+//    @State var ingredient9: Ingredient = Ingredient()
+//    @State var ingredient10: Ingredient = Ingredient()
+    
+    let ingredients = [Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient()]
+    
     @State var ingredientCount: Int = 4
     var body: some View {
         VStack(alignment: .leading) {
@@ -31,8 +44,9 @@ struct NewRecipe: View {
                 .font(.title)
                 .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                 .padding()
-            VStack(alignment: .leading) {
-                Text("Cocktail Name")
+            Group{
+                Group{
+                    Text("Cocktail Name")
                     .font(.headline)
             
                 TextField("Name", text: $tempName)
@@ -43,6 +57,8 @@ struct NewRecipe: View {
                 TextField("Name", text: $tempMethod)
                     .padding()
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+                }
+                Group {
                 Text("Glass")
                     .font(.headline)
                 TextField("Glass", text: $tempGlass)
@@ -53,7 +69,8 @@ struct NewRecipe: View {
                 TextField("Garnish", text: $tempGlass)
                     .padding()
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                VStack(alignment: .leading) {
+                }
+                Group {
                 Text("Ingredients: ")
                     .font(.headline)
                 HStack {
@@ -64,35 +81,50 @@ struct NewRecipe: View {
                     Spacer()
                     
                 }
-                }
-                
-                VStack {
-                    TextField("Ingredient 1", text: $tempIngredient1)
-                        .padding()
-                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                    TextField("Ingredient 2", text: $tempIngredient2)
-                        .padding()
-                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                    TextField("Ingredient 3", text: $tempIngredient3)
-                        .padding()
-                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                    TextField("Ingredient 4", text: $tempIngredient4)
-                        .padding()
-                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                    Text("Save new recipe")
-                        .fontWeight(.bold)
-                        .font(.headline)
-                        .padding()
-                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-                        .cornerRadius(10)
-                        .foregroundColor(.white)
-                        .padding(5)
-                        .overlay(
-                            RoundedRectangle(cornerRadius: 15)
-                                .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5)
-                    )
+                    IngredientsList(count: ingredientCount)
                 }
             }
+            Text("Save new recipe")
+            .fontWeight(.bold)
+            .font(.headline)
+            .padding()
+            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+            .cornerRadius(10)
+            .foregroundColor(.white)
+            .padding(5)
+            .overlay(
+                RoundedRectangle(cornerRadius: 15)
+                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
+
+//                VStack {
+//                    VStack {
+//                        ForEach((1...ingredientCount), id: \.self) {
+//                            TextField("Ingredient \($0):", text: \.self)
+//                        }
+//                    }
+//                    TextField("Ingredient 2", text: $tempIngredient2)
+//                        .padding()
+//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+//                    TextField("Ingredient 3", text: $tempIngredient3)
+//                        .padding()
+//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+//                    TextField("Ingredient 4", text: $tempIngredient4)
+//                        .padding()
+//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+//                    Text("Save new recipe")
+//                        .fontWeight(.bold)
+//                        .font(.headline)
+//                        .padding()
+//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+//                        .cornerRadius(10)
+//                        .foregroundColor(.white)
+//                        .padding(5)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 15)
+//                                .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5)
+//                    )
+//                }
+//            }
         }
         .padding()    
     }

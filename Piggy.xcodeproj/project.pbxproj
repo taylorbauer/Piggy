@@ -35,6 +35,9 @@
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
 		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
 		349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4142382FCF1004B3B8F /* ItemRow.swift */; };
+		34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3ACC241003D4002E672C /* Ingredient.swift */; };
+		34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD524100AD9002E672C /* IngredientsList.swift */; };
+		34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD724100CA1002E672C /* IngredientRow.swift */; };
 		34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA823F4546D00E61274 /* LocalDataBase.swift */; };
 		34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */; };
 		34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD2238AD96E00156DBB /* ViewInventory.swift */; };
@@ -211,6 +214,9 @@
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		349DB4142382FCF1004B3B8F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		34DF3ACC241003D4002E672C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		34DF3AD524100AD9002E672C /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
+		34DF3AD724100CA1002E672C /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		34F3EBA823F4546D00E61274 /* LocalDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
 		34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol_Inventory.swift; sourceTree = "<group>"; };
 		34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
@@ -288,6 +294,9 @@
 				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
+				34DF3AD724100CA1002E672C /* IngredientRow.swift */,
+				34DF3AD524100AD9002E672C /* IngredientsList.swift */,
+				34DF3ACC241003D4002E672C /* Ingredient.swift */,
 				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
@@ -470,12 +479,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
-					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
 					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
+					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -627,11 +636,14 @@
 			files = (
 				34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */,
 				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
+				34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */,
 				340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */,
 				345D987723E35C040008CE1C /* InventoryStepper.swift in Sources */,
+				34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */,
 				34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */,
 				3462BF8523F23E3400E7640E /* TakeWineInventory.swift in Sources */,
 				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
+				34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */,
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
 				3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */,
