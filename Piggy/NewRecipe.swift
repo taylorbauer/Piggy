@@ -9,7 +9,6 @@
 // This is where the user will create new recipes
 // As of right now, it is called on by MainMenu
 //
-// As of 2/18 this is all strings I will update it later this week/next!! -TB
 //
 
 import SwiftUI
@@ -20,10 +19,10 @@ struct NewRecipe: View {
     @State private var tempMethod: String = "Shaken/Stirred?"
     @State private var tempGlass: String = "Rocks, Coupe, etc."
     @State private var tempGarnish: String = "Peel? Zest? Cherry?"
-    @State private var tempIngredient1: String = "Ingredient 1"
-    @State private var tempIngredient2: String = "Ingredient 2"
-    @State private var tempIngredient3: String = "Ingredient 3"
-    @State private var tempIngredient4: String = "Ingredient 4"
+//    @State private var tempIngredient1: String = "Ingredient 1"
+//    @State private var tempIngredient2: String = "Ingredient 2"
+//    @State private var tempIngredient3: String = "Ingredient 3"
+//    @State private var tempIngredient4: String = "Ingredient 4"
 //    @State var ingredient1: Ingredient = Ingredient()
 //    @State var ingredient2: Ingredient = Ingredient()
 //    @State var ingredient3: Ingredient = Ingredient()
@@ -35,7 +34,7 @@ struct NewRecipe: View {
 //    @State var ingredient9: Ingredient = Ingredient()
 //    @State var ingredient10: Ingredient = Ingredient()
     
-    let ingredients = [Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient()]
+//    let ingredients = [Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient()]
     
     @State var ingredientCount: Int = 4
     var body: some View {
@@ -82,19 +81,42 @@ struct NewRecipe: View {
                     
                 }
                     IngredientsList(count: ingredientCount)
+                    NavigationLink(destination: RecipeSuccess()) {
+                        Spacer()
+                        Text("Save new recipe")
+                            .fontWeight((.bold))
+                            .font(.headline)
+                            .padding()
+                            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                            .cornerRadius(10)
+                            .foregroundColor(.white)
+                            .padding(5)
+                        .overlay(
+                                RoundedRectangle(cornerRadius: 15)
+                                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
+                        Spacer()
+                        }
                 }
             }
-            Text("Save new recipe")
-            .fontWeight(.bold)
-            .font(.headline)
-            .padding()
-            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-            .cornerRadius(10)
-            .foregroundColor(.white)
-            .padding(5)
-            .overlay(
-                RoundedRectangle(cornerRadius: 15)
-                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
+            NavigationView{
+            HStack {
+                NavigationView{
+                    NavigationLink(destination: MainMenu()) {
+                        Text("Save new recipe")
+//                        .fontWeight(.bold)
+//                        .font(.headline)
+//                        .padding()
+//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+//                        .cornerRadius(10)
+//                        .foregroundColor(.white)
+//                        .padding(5)
+//                        .overlay(
+//                            RoundedRectangle(cornerRadius: 15)
+//                                .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
+                    }.padding()
+                }
+                }
+            }.padding()
 
 //                VStack {
 //                    VStack {
@@ -126,8 +148,11 @@ struct NewRecipe: View {
 //                }
 //            }
         }
-        .padding()    
+            
+        .padding()
+        
     }
+    
 }
 
 struct NewRecipe_Previews: PreviewProvider {

@@ -38,6 +38,7 @@
 		34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3ACC241003D4002E672C /* Ingredient.swift */; };
 		34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD524100AD9002E672C /* IngredientsList.swift */; };
 		34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD724100CA1002E672C /* IngredientRow.swift */; };
+		34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD924101491002E672C /* RecipeSuccess.swift */; };
 		34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA823F4546D00E61274 /* LocalDataBase.swift */; };
 		34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */; };
 		34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD2238AD96E00156DBB /* ViewInventory.swift */; };
@@ -217,6 +218,7 @@
 		34DF3ACC241003D4002E672C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
 		34DF3AD524100AD9002E672C /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
 		34DF3AD724100CA1002E672C /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
+		34DF3AD924101491002E672C /* RecipeSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuccess.swift; sourceTree = "<group>"; };
 		34F3EBA823F4546D00E61274 /* LocalDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
 		34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol_Inventory.swift; sourceTree = "<group>"; };
 		34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
@@ -295,6 +297,7 @@
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
 				34DF3AD724100CA1002E672C /* IngredientRow.swift */,
+				34DF3AD924101491002E672C /* RecipeSuccess.swift */,
 				34DF3AD524100AD9002E672C /* IngredientsList.swift */,
 				34DF3ACC241003D4002E672C /* Ingredient.swift */,
 				3462BF8A23F2417C00E7640E /* Recipe.swift */,
@@ -659,6 +662,7 @@
 				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
 				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
+				34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */,
 				868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */,
 				34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */,
 				349DB4132382F72C004B3B8F /* Helper.swift in Sources */,

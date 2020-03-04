@@ -5,6 +5,10 @@
 //  Created by Taylor Bauer on 3/4/20.
 //  Copyright © 2020 Group 6. All rights reserved.
 //
+//  These are the rows of textfields that the user will type
+//  ingredient names into in NewRecipe
+//
+//
 
 import SwiftUI
 
