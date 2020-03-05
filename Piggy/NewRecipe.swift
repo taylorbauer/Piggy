@@ -36,14 +36,17 @@ struct NewRecipe: View {
     
 //    let ingredients = [Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient()]
     
-    @State var ingredientCount: Int = 4
+    @State var ingredientCount: Int = 3
         
     
     
     var body: some View {
-        VStack {
+        
+        VStack(alignment: .leading) {
+            
         NavigationView{
         VStack(alignment: .leading) {
+            ScrollView{
             
             Text("Create New Recipe")
                 .font(.title)
@@ -117,6 +120,8 @@ struct NewRecipe: View {
                     }
             }
             }
+            .padding()
+            }
 ////            NavigationView{
 //////            HStack {
 //////                NavigationView{
@@ -168,7 +173,7 @@ struct NewRecipe: View {
 //            }
         }
             
-        .padding()
+        //.padding()
         
     }
     
