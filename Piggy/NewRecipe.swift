@@ -37,8 +37,14 @@ struct NewRecipe: View {
 //    let ingredients = [Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient(), Ingredient()]
     
     @State var ingredientCount: Int = 4
+        
+    
+    
     var body: some View {
+        VStack {
+        NavigationView{
         VStack(alignment: .leading) {
+            
             Text("Create New Recipe")
                 .font(.title)
                 .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
@@ -73,50 +79,63 @@ struct NewRecipe: View {
                 Text("Ingredients: ")
                     .font(.headline)
                 HStack {
-                    Text("\(ingredientCount)")
-                    Stepper("", value: $ingredientCount)
+                    Text("\(ingredientCount) ingredients")
+                    Stepper("", onIncrement: {
+                        self.ingredientCount += 1
+                    }, onDecrement: {
+                        if self.ingredientCount != 1 {
+                            self.ingredientCount -= 1
+                        }
+                    })
                     Spacer()
                     Text("Add/Remove")
                     Spacer()
                     
                 }
                     IngredientsList(count: ingredientCount)
-                    NavigationLink(destination: RecipeSuccess()) {
+                    
+                    HStack {
                         Spacer()
-                        Text("Save new recipe")
-                            .fontWeight((.bold))
-                            .font(.headline)
-                            .padding()
-                            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-                            .cornerRadius(10)
-                            .foregroundColor(.white)
-                            .padding(5)
-                        .overlay(
-                                RoundedRectangle(cornerRadius: 15)
-                                    .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
-                        Spacer()
+                        NavigationLink(destination: RecipeSuccess()) {
+                            
+                            Text("Save new recipe")
+                                .fontWeight((.bold))
+                                .font(.headline)
+                                .padding()
+                                .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                                .cornerRadius(10)
+                                .foregroundColor(.white)
+                                .padding(5)
+                            .overlay(
+                                    RoundedRectangle(cornerRadius: 15)
+                                        .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
                         }
-                }
+                        Spacer()
+                    }
+                        //Spacer()
+                        }
+                    }
             }
-            NavigationView{
-            HStack {
-                NavigationView{
-                    NavigationLink(destination: MainMenu()) {
-                        Text("Save new recipe")
-//                        .fontWeight(.bold)
-//                        .font(.headline)
-//                        .padding()
-//                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-//                        .cornerRadius(10)
-//                        .foregroundColor(.white)
-//                        .padding(5)
-//                        .overlay(
-//                            RoundedRectangle(cornerRadius: 15)
-//                                .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
-                    }.padding()
-                }
-                }
-            }.padding()
+            }
+////            NavigationView{
+//////            HStack {
+//////                NavigationView{
+//////                    NavigationLink(destination: MainMenu()) {
+//////                        Text("Save new recipe")
+////////                        .fontWeight(.bold)
+////////                        .font(.headline)
+////////                        .padding()
+////////                        .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+////////                        .cornerRadius(10)
+////////                        .foregroundColor(.white)
+////////                        .padding(5)
+////////                        .overlay(
+////////                            RoundedRectangle(cornerRadius: 15)
+////////                                .stroke(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0), lineWidth: 5))
+//////                    }.padding()
+//////                }
+//////                }
+////            }.padding()
 
 //                VStack {
 //                    VStack {
