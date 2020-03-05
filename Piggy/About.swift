@@ -12,9 +12,36 @@ import SwiftUI
 
 struct About: View {
     var body: some View {
-        VStack {
-            Text("This is the about page")
-            Spacer()
+        VStack(alignment: .leading) {
+            Group {
+                
+                Text("Team Members:")
+                    .font(.title)
+                    .padding(20)
+                
+                Group {
+                Text("Megana Chinalachaiagari")
+                   .font(.headline)
+                Text("Write your job description here!\n")
+                }
+
+                Text("Ryan Pierce")
+                    .font(.headline)
+                Text("Write your job description here!\n")
+                
+                Text("Tommy Nguyen")
+                    .font(.headline)
+                Text("Write your job description here!\n")
+                
+                Text("Mitch Simmons")
+                    .font(.headline)
+                Text("Write your job description here!\n")
+                
+                Text("Taylor Bauer")
+                    .font(.headline)
+                Text("Project Lead and UI Lead\n")
+                //Spacer()
+            }
         }
     }
 }

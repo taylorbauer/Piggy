@@ -42,7 +42,7 @@ struct NewRecipe: View {
     
     var body: some View {
         
-        VStack(alignment: .leading) {
+        VStack(alignment: .leading) { // I can't figure out how to get text alignment to work, but ideally this will be left justified
             
         NavigationView{
         VStack(alignment: .leading) {
@@ -69,7 +69,7 @@ struct NewRecipe: View {
                 Group {
                 Text("Glass")
                     .font(.headline)
-                TextField("Glass", text: $tempGlass)
+                    TextField("Glass", text: $tempGlass)
                     .padding()
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
                 Text("Garnish")
@@ -88,6 +88,12 @@ struct NewRecipe: View {
                     }, onDecrement: {
                         if self.ingredientCount != 1 {
                             self.ingredientCount -= 1
+                        }
+                        else if self.ingredientCount < 1 {
+                            self.ingredientCount += 1
+                        }
+                        else {
+                            self.ingredientCount = 1
                         }
                     })
                     Spacer()
