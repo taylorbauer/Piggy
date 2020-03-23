@@ -21,7 +21,29 @@ import SwiftUI
 
 struct EditInventory: View {
     var body: some View {
-        Text("This is the page where users can adjust inventory categories, pars, etc.")
+        NavigationView {
+            VStack (alignment: .leading){
+                Text("Edit Inventory")
+                    .font(.title)
+                    .padding()
+                Group{
+                    List {
+                        Section(header: Text("Edit Categories and Pars").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                            .font(.title)) {
+                                NavigationLink(destination: EditLiquorInventory()) {
+                                    Text("Edit Liquor Inventory")
+                                }
+                                NavigationLink(destination: EditWineInventory()) {
+                                    Text("Edit Wine Inventory")
+                                }
+                                NavigationLink(destination: EditBeerInventory()) {
+                                    Text("Edit Beer Inventory")
+                                }
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
