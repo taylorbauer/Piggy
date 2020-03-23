@@ -30,14 +30,37 @@ struct EditInventory: View {
                     List {
                         Section(header: Text("Edit Categories and Pars").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)) {
-                                NavigationLink(destination: EditLiquorInventory()) {
-                                    Text("Edit Liquor Inventory")
+                                HStack {
+                                    Image("liquor 3")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: EditLiquorInventory()) {
+                                        Text("Edit Liquor Inventory")
+                                    }
                                 }
-                                NavigationLink(destination: EditWineInventory()) {
-                                    Text("Edit Wine Inventory")
+                                HStack {
+                                    Image("liquor 1")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: EditWineInventory()) {
+                                        Text("Edit Wine Inventory")
+                                    }
                                 }
-                                NavigationLink(destination: EditBeerInventory()) {
-                                    Text("Edit Beer Inventory")
+                                HStack {
+                                    Image("liquor 2")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: EditBeerInventory()) {
+                                        Text("Edit Beer Inventory")
+                                    }
+                                }
+                                HStack {
+                                    Image("angel")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: EditGroceryInventory()) {
+                                        Text("Edit Grocery Inventory")
+                                    }
                                 }
                         }
                     }
