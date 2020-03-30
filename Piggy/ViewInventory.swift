@@ -14,11 +14,33 @@ import SwiftUI
 
 struct ViewInventory: View {
     var body: some View {
-        VStack {
-            Text("This is the main menu for viewing inventory")
-            Spacer()
+        NavigationView {
+                VStack {
+                    List {
+                        Section(header: Text("View Inventory Menu").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                            .font(.title)){
+                                HStack {
+                                    Image("liquor 2")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: ViewCurrentInventory()) {
+                                        Text("View Current Inventory")
+                                    }
+                                }
+                                HStack {
+                                    Image("angel")
+                                        .resizable()
+                                        .frame(width: 64, height: 64)
+                                    NavigationLink(destination: GenerateOrderReport()) {
+                                        Text("Generate Order Report")
+                                    }
+                                }
+                        }
+                    }
+            }.navigationViewStyle(StackNavigationViewStyle())
+            .listStyle(GroupedListStyle())
         }
-    }
+}
 }
 
 struct ViewInventory_Previews: PreviewProvider {

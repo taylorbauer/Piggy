@@ -26,7 +26,7 @@ struct MainMenu: View {
                         Section(header: Text("Inventory").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)){
                         NavigationLink(destination: ViewInventory()) {
-                            Text("View Current Inventory / Order Reports \n(🚧UNDER CONSTRUCTION👷)")
+                            Text("View Current Inventory / Order Reports")
                             }
                             NavigationLink(destination: NewInventoryPage()) {
                                 Text("Take Inventory")
