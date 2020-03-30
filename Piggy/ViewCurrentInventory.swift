@@ -12,11 +12,15 @@
 import SwiftUI
 
 struct ViewCurrentInventory: View {
-    let recipes = Bundle.main.decode([Recipe].self, from: "recipes.json")
-        .sorted {
+    let liquors = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
+        .sorted{
             $0.name < $1.name
     }
-    let Liquor = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
+    let beers = Bundle.main.decode([InventoryItem].self, from: "beer_inventory.json")
+        .sorted{
+            $0.name < $1.name
+    }
+    let wines = Bundle.main.decode([InventoryItem].self, from: "wine_inventory.json")
         .sorted{
             $0.name < $1.name
     }
@@ -28,44 +32,24 @@ struct ViewCurrentInventory: View {
                 .font(.headline)
             Group {
                 List {
-                    Section(header: Text("Liquor").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                    Section(header: Text("Liquor").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0)).padding()
                     .font(.title)){
-                        Text("HELLO")
-                    }
-                    ForEach(recipes) { recipe in
-                        VStack(alignment: .leading) {
-                            HStack {
-                                Text(recipe.name)
-                                    .bold()
-                                    .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-                                    .padding()
-                                Spacer()
-                                Text(recipe.glass)
-                                Spacer()
-                                Text(recipe.method)
-                                    .padding()
-                                
-                            }
-                            VStack {
-                                ForEach(0 ..< recipe.ingredientCount) { ingredient in
-                                    HStack {
-                                        Text(recipe.ingredients[ingredient][0])
-                                        Text(recipe.ingredients[ingredient][1])
-                                            .bold()
-                                        Spacer()
-                                    }
-                                    .padding(.leading)
-                                }
-                                HStack {
-                                    Text(recipe.garnish)
-                                        .italic()
-                                        .padding(.leading)
-                                    Spacer()
-                                }
-                            }
+                        ForEach(liquors) { liquor in
+                            InventoryReportRow(item: liquor)
                         }
                     }
-                    .padding(.bottom)
+                    Section(header: Text("Beer").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0)).padding()
+                    .font(.title)){
+                        ForEach(beers) { beer in
+                            InventoryReportRow(item: beer)
+                        }
+                    }
+                    Section(header: Text("Wine").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0)).padding()
+                    .font(.title)){
+                        ForEach(wines) { wine in
+                            InventoryReportRow(item: wine)
+                        }
+                    }
                 }
             }
         }

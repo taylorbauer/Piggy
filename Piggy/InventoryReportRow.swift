@@ -11,13 +11,41 @@
 import SwiftUI
 
 struct InventoryReportRow: View {
+    @State var item: InventoryItem
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack {
+            Text(item.name)
+                .padding()
+                .font(.headline)
+            Spacer()
+            VStack{
+                HStack {
+                    Spacer()
+                    Text("Current Count: \(item.currentCount)")
+                }
+                HStack {
+                    Spacer()
+                    Text("Par: \(item.par)")
+                }
+                HStack {
+                    Spacer()
+                    HStack {
+                        Text("Missing:")
+                            .bold()
+                        Text(String(item.par - item.currentCount))
+                            .foregroundColor((item.par - item.currentCount <= 0) ? .green : .red)
+                        .bold()
+                    }
+                }
+            }
+        .padding()
+            
+        }
     }
 }
 
 struct InventoryReportRow_Previews: PreviewProvider {
     static var previews: some View {
-        InventoryReportRow()
+        InventoryReportRow(item: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4))
     }
 }
