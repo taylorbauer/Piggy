@@ -3,60 +3,70 @@
     "id": "54b01a90-ba8b-43ec-95e9-3cf2871d9fa7",
     "name": "PBR",
     "lastCount": 8,
-    "currentCount": 8
+    "currentCount": 8,
+    "par": 24
   },
   {
     "id": "0e47886d-f014-484e-b948-741da4f3ae91",
     "name": "Bud Light",
     "lastCount": 8,
-    "currentCount": 8
+    "currentCount": 8,
+    "par": 24
   },
   {
     "id": "a3420f4d-d96d-4eb8-ae82-cc7c9ea4de22",
     "name": "Bud Heavy",
     "lastCount": 0,
-    "currentCount": 0
+    "currentCount": 0,
+    "par": 12
   },
   {
     "id": "dda06fd5-d437-4d21-95bf-ed8a50fe8dba",
     "name": "Modelo",
     "lastCount": 10,
-    "currentCount": 10
+    "currentCount": 10,
+    "par": 24
   },
   {
     "id": "0f6aba17-cb24-4549-b6a8-68ae9d5ca6bd",
     "name": "Natural Light",
     "lastCount": 3,
-    "currentCount": 3
+    "currentCount": 3,
+    "par": 36
   },
   {
     "id": "f495d828-ef85-43ab-8462-98298691a080",
     "name": "Coors Banquet",
     "lastCount": 6,
-    "currentCount": 6
+    "currentCount": 6,
+    "par": 30
   },
   {
     "id": "1dd908ff-5d80-4712-a658-0dba72fcd3af",
     "name": "Deschutes Fresh Squeezed",
     "lastCount": 2,
-    "currentCount": 2
+    "currentCount": 2,
+    "par": 12
   },
   {
     "id": "e3676bb4-75d1-4d20-b4b4-478fa69f4e23",
     "name": "Boulevard Pale Ale",
     "lastCount": 0,
-    "currentCount": 0
+    "currentCount": 0,
+    "par": 24
   },
   {
     "id": "f62e12dd-89d0-4689-b9ea-213511a87c94",
     "name": "Boulevard Tank 7",
     "lastCount": 7,
-    "currentCount": 7
+    "currentCount": 7,
+    "par": 10
   },
   {
     "id": "496d2108-d7d3-4006-9c38-d1802c29ba05",
     "name": "Crane Tea Weiss",
     "lastCount": 8,
-    "currentCount": 8
+    "currentCount": 8,
+    "par": 12
   }
 ]

@@ -3,36 +3,42 @@
     "id": "a55a5462-80e2-4195-bf90-199a8e943861",
     "name": "Cabernet Savignion",
     "lastCount": 8,
-    "currentCount": 8
+    "currentCount": 8,
+    "par": 7
   },
   {
     "id": "85c51979-cbe3-4272-9ecb-378240ec0aa4",
     "name": "Syrah",
     "lastCount": 8,
-    "currentCount": 8
+    "currentCount": 8,
+    "par": 12
   },
   {
     "id": "85c51979-cbe3-4272-9ecb-378240ec0aa4",
     "name": "Tempernillo",
     "lastCount": 0,
-    "currentCount": 0
+    "currentCount": 0,
+    "par": 8
   },
   {
     "id": "8de8c3ea-618c-4562-b661-7f30a4e23561",
     "name": "Cava",
     "lastCount": 10,
-    "currentCount": 10
+    "currentCount": 10,
+    "par": 8
   },
   {
     "id": "8de8c3ea-618c-4562-b661-7f30a4e23561",
     "name": "White Blend",
     "lastCount": 3,
-    "currentCount": 3
+    "currentCount": 3,
+    "par": 8
   },
   {
     "id": "09780a2e-1437-4219-94e8-5437331ebf24",
     "name": "Savignion Blanc",
     "lastCount": 6,
-    "currentCount": 6
+    "currentCount": 6,
+    "par": 9
   }
 ]

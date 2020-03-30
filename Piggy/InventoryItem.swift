@@ -18,4 +18,5 @@ struct InventoryItem: Codable, Identifiable {
     var name: String
     var lastCount: Int
     var currentCount: Int
+    var par: Int
 }
