@@ -19,4 +19,5 @@ struct InventoryItem: Codable, Identifiable {
     var lastCount: Int
     var currentCount: Int
     var par: Int
+    var price: Float
 }

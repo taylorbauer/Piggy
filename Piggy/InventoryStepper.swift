@@ -46,6 +46,6 @@ struct InventoryStepper: View {
 
 struct InventoryStepper_Previews: PreviewProvider {
     static var previews: some View {
-        InventoryStepper(itemType: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4))
+        InventoryStepper(itemType: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4, price: 10.25))
     }
 }

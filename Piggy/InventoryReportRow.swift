@@ -46,6 +46,6 @@ struct InventoryReportRow: View {
 
 struct InventoryReportRow_Previews: PreviewProvider {
     static var previews: some View {
-        InventoryReportRow(item: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4))
+        InventoryReportRow(item: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4, price: 10.25))
     }
 }

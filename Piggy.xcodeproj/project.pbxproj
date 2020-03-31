@@ -38,6 +38,7 @@
 		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
 		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
 		349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4142382FCF1004B3B8F /* ItemRow.swift */; };
+		349E2E452433B09000826005 /* OrderReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2E442433B09000826005 /* OrderReportRow.swift */; };
 		34A28A222429264700B9694D /* EditLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A212429264700B9694D /* EditLiquorInventory.swift */; };
 		34A28A2B2429265400B9694D /* EditBeerInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A2A2429265400B9694D /* EditBeerInventory.swift */; };
 		34A28A2D2429265E00B9694D /* EditWineInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A2C2429265E00B9694D /* EditWineInventory.swift */; };
@@ -225,6 +226,7 @@
 		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		349DB4142382FCF1004B3B8F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		349E2E442433B09000826005 /* OrderReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReportRow.swift; sourceTree = "<group>"; };
 		34A28A212429264700B9694D /* EditLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLiquorInventory.swift; sourceTree = "<group>"; };
 		34A28A2A2429265400B9694D /* EditBeerInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBeerInventory.swift; sourceTree = "<group>"; };
 		34A28A2C2429265E00B9694D /* EditWineInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWineInventory.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
 				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
+				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
@@ -503,12 +506,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
-					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
 					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
+					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -681,6 +684,7 @@
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
 				34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
+				349E2E452433B09000826005 /* OrderReportRow.swift in Sources */,
 				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
 				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
 				34A28A2F242928B000B9694D /* EditGroceryInventory.swift in Sources */,
