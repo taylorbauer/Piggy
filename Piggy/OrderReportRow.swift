@@ -24,7 +24,7 @@ struct OrderReportRow: View {
                             .foregroundColor((item.par - item.currentCount <= 0) ? .green : .red)
                         .bold()
                         Text("x")
-                        Text("$" + String(item.price) + " = ")
+                        Text("$" + String(format: "%.2f", item.price) + " = ")
                         Text(String(format: "$%.2f", item.price * (Float((item.par - item.currentCount)))))
                             .bold()
                     }
