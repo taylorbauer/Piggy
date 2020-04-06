@@ -5,10 +5,17 @@
 //  Created by Taylor Bauer on 3/30/20.
 //  Copyright © 2020 Group 6. All rights reserved.
 //
+//
+//
 
 import SwiftUI
 
+
+
 struct GenerateOrderReport: View {
+    
+    @EnvironmentObject var total : OrderTotalCounter
+    @State var subtotal : Float
     
     let liquors = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
         .sorted{
@@ -37,7 +44,7 @@ struct GenerateOrderReport: View {
                         .font(.title)){
                             ForEach(liquors) { liquor in
                                 if (liquor.par > liquor.currentCount) {
-                                    OrderReportRow(item: liquor)
+                                    OrderReportRow(item: liquor, subtotal: self.$subtotal)
                                 }
                             }
                     }
@@ -45,7 +52,7 @@ struct GenerateOrderReport: View {
                         .font(.title)){
                             ForEach(beers) { beer in
                                 if (beer.par > beer.currentCount) {
-                                    OrderReportRow(item: beer)
+                                    OrderReportRow(item: beer, subtotal: self.$subtotal)
                                 }
                             }
                     }
@@ -53,11 +60,21 @@ struct GenerateOrderReport: View {
                         .font(.title)){
                             ForEach(wines) { wine in
                                 if (wine.par > wine.currentCount) {
-                                    OrderReportRow(item: wine)
+                                    OrderReportRow(item: wine, subtotal: self.$subtotal)
                                 }
                             }
                     }
                 }
+                HStack{
+                    Spacer()
+                    Text("Order Subtotal:")
+                        .bold()
+                    Text("$" + String(subtotal))
+                        .bold()
+                        .foregroundColor(.red)
+                        
+                }.padding()
+                
             }
         }
     }
@@ -65,6 +82,6 @@ struct GenerateOrderReport: View {
 
 struct GenerateOrderReport_Previews: PreviewProvider {
     static var previews: some View {
-        GenerateOrderReport()
+        GenerateOrderReport(subtotal: 0)
     }
 }

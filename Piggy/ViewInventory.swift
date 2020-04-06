@@ -31,7 +31,7 @@ struct ViewInventory: View {
                                     Image("angel")
                                         .resizable()
                                         .frame(width: 64, height: 64)
-                                    NavigationLink(destination: GenerateOrderReport()) {
+                                    NavigationLink(destination: GenerateOrderReport(subtotal: 0)) {
                                         Text("Generate Order Report")
                                     }
                                 }
