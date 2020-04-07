@@ -24,6 +24,8 @@ struct TakeLiquorInventory: View {
     // Decode inventory.json to create InventoryItem objects
     // This list of objects is called "items"
     let items = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
+	
+	@State var name = ""
 
     var body: some View {
         VStack() {
@@ -38,7 +40,7 @@ struct TakeLiquorInventory: View {
                 // Now, "items" is a list of "bottle"s that we use to generate the views
                 ForEach(items) { bottle in
                     VStack(alignment: .leading) {
-                        Text(bottle.name)
+                        /*Text(bottle.name)
                             .font(.headline)
                         HStack {
                             
@@ -52,7 +54,8 @@ struct TakeLiquorInventory: View {
                             Spacer()
                         }
                         Spacer()
-                        Text("Last \(bottle.name) Count: \(bottle.lastCount)")
+                        Text("Last \(bottle.name) Count: \(bottle.lastCount)")*/
+						TextField("Liquor Name", text: self.$name)
                     }
                     }
                 HStack {
@@ -105,4 +108,5 @@ struct TakeLiquorInventory_Previews: PreviewProvider {
         TakeLiquorInventory()
         //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
+	
 }

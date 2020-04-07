@@ -57,6 +57,8 @@
 		34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2FDC238C36EC00156DBB /* liquor_inventory.json */; };
 		34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDE238C380300156DBB /* InventoryItem.swift */; };
 		868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DA9EA23F3A43E00384235 /* InventoryDB.swift */; };
+		86FDF62D243CDC4200A9D553 /* InventoryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDF62C243CDC4100A9D553 /* InventoryController.swift */; };
+		86FDF636243CDF0A00A9D553 /* InventoryDBitem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86FDF635243CDF0A00A9D553 /* InventoryDBitem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -246,6 +248,8 @@
 		34FE2FDC238C36EC00156DBB /* liquor_inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = liquor_inventory.json; sourceTree = "<group>"; };
 		34FE2FDE238C380300156DBB /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
 		868DA9EA23F3A43E00384235 /* InventoryDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDB.swift; sourceTree = "<group>"; };
+		86FDF62C243CDC4100A9D553 /* InventoryController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryController.swift; sourceTree = "<group>"; };
+		86FDF635243CDF0A00A9D553 /* InventoryDBitem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDBitem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -338,6 +342,8 @@
 				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
+				86FDF62C243CDC4100A9D553 /* InventoryController.swift */,
+				86FDF635243CDF0A00A9D553 /* InventoryDBitem.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
 				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
@@ -664,6 +670,7 @@
 				34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */,
 				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
 				34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */,
+				86FDF636243CDF0A00A9D553 /* InventoryDBitem.swift in Sources */,
 				34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */,
 				340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */,
 				34A28A2B2429265400B9694D /* EditBeerInventory.swift in Sources */,
@@ -690,6 +697,7 @@
 				34A28A2F242928B000B9694D /* EditGroceryInventory.swift in Sources */,
 				349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */,
 				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
+				86FDF62D243CDC4200A9D553 /* InventoryController.swift in Sources */,
 				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
 				34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */,
@@ -869,7 +877,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";
-				DEVELOPMENT_TEAM = WG4BXPYBB3;
+				DEVELOPMENT_TEAM = UX94H2EL6M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Piggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -877,7 +885,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy-Mitch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
@@ -896,7 +904,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";
-				DEVELOPMENT_TEAM = WG4BXPYBB3;
+				DEVELOPMENT_TEAM = UX94H2EL6M;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Piggy/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -904,7 +912,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 0.0.1;
-				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy";
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.Piggy-Mitch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTS_MACCATALYST = YES;
