@@ -1,0 +1,82 @@
+[
+  {
+    "id": "146c9fa7-bdf1-4b92-97f4-4c30f2fdc366",
+    "name": "Vodka",
+    "lastCount": 8,
+    "currentCount": 8,
+    "par": 12,
+    "price": 12.50
+  },
+  {
+    "id": "9431bc2c-971a-4e2b-89c3-3030c429a7ee",
+    "name": "Rum",
+    "lastCount": 8,
+    "currentCount": 8,
+    "par": 10,
+    "price": 12
+  },
+  {
+    "id": "cf323224-e393-4dd9-a20a-a71700e62973",
+    "name": "Tequila",
+    "lastCount": 0,
+    "currentCount": 0,
+    "par": 12,
+    "price": 10.50
+  },
+  {
+    "id": "8849b726-8eb0-447f-abd2-ee84e3e98a31",
+    "name": "Mezcal",
+    "lastCount": 10,
+    "currentCount": 10,
+    "par": 10,
+    "price": 19.50
+  },
+  {
+    "id": "5f684736-2fc9-4c92-9682-dcf1d3e013cc",
+    "name": "Sweet Vermouth",
+    "lastCount": 3,
+    "currentCount": 3,
+    "par": 10,
+    "price": 16.75
+  },
+  {
+    "id": "c823252d-7775-4eb6-bd24-03099b2557ae",
+    "name": "Dry Vermouth",
+    "lastCount": 6,
+    "currentCount": 6,
+    "par": 12,
+    "price": 10.25
+  },
+  {
+    "id": "282790fe-9d36-4f8e-bc3b-8f15e879cfda",
+    "name": "Campari",
+    "lastCount": 2,
+    "currentCount": 2,
+    "par": 8,
+    "price": 9.25
+  },
+  {
+    "id": "ab24a778-365d-4099-9047-86b61572e590",
+    "name": "Rye",
+    "lastCount": 0,
+    "currentCount": 0,
+    "par": 12,
+    "price": 10.50
+  },
+  {
+    "id": "6074519b-5791-47a2-8cbb-1979c4e1efa0",
+    "name": "Bourbon",
+    "lastCount": 7,
+    "currentCount": 7,
+    "par": 12,
+    "price": 12.50
+  },
+  {
+    "id": "62a1c0d9-99f4-42f3-8a39-2486553da93e",
+    "name": "Scotch",
+    "lastCount": 8,
+    "currentCount": 8,
+    "par": 6,
+    "price": 18.50
+  }
+]

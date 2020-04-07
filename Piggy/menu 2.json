@@ -1,0 +1,51 @@
+[
+    {
+        "id": "66ea0d02-3e77-4abc-9065-36277698e6f5",
+        "name": "Inventory",
+        "items": [
+            {
+                "id": "f10a07a7-a79c-489d-9078-382637fae387",
+                "name": "Take Inventory"
+            },
+            {
+                "id": "c13569e8-15ac-4d49-a69d-4390234ac2fc",
+                "name": "View Inventory"
+            }
+        ]
+    },
+    {
+        "name": "Recipes",
+        "id": "f958d661-50ac-4f45-b95a-1c6222cfc208",
+        "items": [
+            {
+                "id": "a289f18f-163c-45f1-96f1-f7a8e146f099",
+                "name":"Search Recipes"
+            },
+            {
+                "id": "78462e28-9e56-4b69-8779-e459097dd91f",
+                "name": "Create New Recipe"
+            }
+        ]
+    },
+    {
+        "name": "Business Analytics",
+        "id": "457883e5-d57e-4219-87ec-5971ed7cb293",
+        "items": [
+            {
+                "id": "261c08f6-2aa6-4d15-858c-a13b044c2113",
+                "name": "View Business Analytics"
+            }
+        ]
+    },
+    {
+        "name": "About",
+        "id": "8c4a569c-d0ec-46fe-b761-d4882c8188a0",
+        "items": [
+            {
+                "id": "217b12b7-d89c-41bd-8058-82cd9c0cc4fb",
+                "name": "Members"
+            }
+        ]
+    }
+]
+

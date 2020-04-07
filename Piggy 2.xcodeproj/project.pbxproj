@@ -1,0 +1,1212 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */; };
+		34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34228BF623E9D6C800CACF6A /* beer_inventory.json */; };
+		3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BA2395681400B501C0 /* NewInventoryPage.swift */; };
+		3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */; };
+		3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */; };
+		3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8442379C1580013B2FA /* AppDelegate.swift */; };
+		3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8462379C1580013B2FA /* SceneDelegate.swift */; };
+		3449D8492379C1580013B2FA /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8482379C1580013B2FA /* MainMenu.swift */; };
+		3449D84B2379C1590013B2FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3449D84A2379C1590013B2FA /* Assets.xcassets */; };
+		3449D84E2379C1590013B2FA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3449D84D2379C1590013B2FA /* Preview Assets.xcassets */; };
+		3449D8512379C1590013B2FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */; };
+		3449D85C2379C1590013B2FA /* PiggyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D85B2379C1590013B2FA /* PiggyTests.swift */; };
+		3449D8672379C1590013B2FA /* PiggyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8662379C1590013B2FA /* PiggyUITests.swift */; };
+		3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3449D8742379C67A0013B2FA /* PiggyLogo.swift */; };
+		345D987723E35C040008CE1C /* InventoryStepper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 345D987623E35C040008CE1C /* InventoryStepper.swift */; };
+		3462BF8323F23D7000E7640E /* wine_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 3462BF8223F23D7000E7640E /* wine_inventory.json */; };
+		3462BF8523F23E3400E7640E /* TakeWineInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8423F23E3400E7640E /* TakeWineInventory.swift */; };
+		3462BF8723F23E6900E7640E /* TakeBeerInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */; };
+		3462BF8923F2409F00E7640E /* RecipeCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8823F2409F00E7640E /* RecipeCard.swift */; };
+		3462BF8B23F2417C00E7640E /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462BF8A23F2417C00E7640E /* Recipe.swift */; };
+		3462BF8D23F2435000E7640E /* recipes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3462BF8C23F2435000E7640E /* recipes.json */; };
+		3469885F23F480D00056C2CA /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469885123F480BA0056C2CA /* SQLite.framework */; };
+		3469886023F480D00056C2CA /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3469885123F480BA0056C2CA /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484ACF3239AEEED008F2334 /* EditInventory.swift */; };
+		34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D94243257C100B9788D /* ViewCurrentInventory.swift */; };
+		34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9D243257CD00B9788D /* GenerateOrderReport.swift */; };
+		34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9F2432595C00B9788D /* InventoryReportRow.swift */; };
+		349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB40E2382F3CC004B3B8F /* Menu.swift */; };
+		349DB4112382F4DF004B3B8F /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = 349DB4102382F4DF004B3B8F /* menu.json */; };
+		349DB4132382F72C004B3B8F /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4122382F72C004B3B8F /* Helper.swift */; };
+		349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349DB4142382FCF1004B3B8F /* ItemRow.swift */; };
+		349E2E452433B09000826005 /* OrderReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349E2E442433B09000826005 /* OrderReportRow.swift */; };
+		34A28A222429264700B9694D /* EditLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A212429264700B9694D /* EditLiquorInventory.swift */; };
+		34A28A2B2429265400B9694D /* EditBeerInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A2A2429265400B9694D /* EditBeerInventory.swift */; };
+		34A28A2D2429265E00B9694D /* EditWineInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A2C2429265E00B9694D /* EditWineInventory.swift */; };
+		34A28A2F242928B000B9694D /* EditGroceryInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34A28A2E242928B000B9694D /* EditGroceryInventory.swift */; };
+		34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3ACC241003D4002E672C /* Ingredient.swift */; };
+		34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD524100AD9002E672C /* IngredientsList.swift */; };
+		34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD724100CA1002E672C /* IngredientRow.swift */; };
+		34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD924101491002E672C /* RecipeSuccess.swift */; };
+		34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA823F4546D00E61274 /* LocalDataBase.swift */; };
+		34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */; };
+		34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD2238AD96E00156DBB /* ViewInventory.swift */; };
+		34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */; };
+		34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD6238ADA2800156DBB /* NewRecipe.swift */; };
+		34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD8238ADA3C00156DBB /* BSAN.swift */; };
+		34FE2FDB238ADA4F00156DBB /* About.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDA238ADA4F00156DBB /* About.swift */; };
+		34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34FE2FDC238C36EC00156DBB /* liquor_inventory.json */; };
+		34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FDE238C380300156DBB /* InventoryItem.swift */; };
+<<<<<<< HEAD
+		86A71B452433F59100D6FE61 /* SQLite in Frameworks */ = {isa = PBXBuildFile; productRef = 86A71B442433F59100D6FE61 /* SQLite */; };
+=======
+		868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 868DA9EA23F3A43E00384235 /* InventoryDB.swift */; };
+>>>>>>> master
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3449D8582379C1590013B2FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3449D8392379C1580013B2FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3449D8402379C1580013B2FA;
+			remoteInfo = Piggy;
+		};
+		3449D8632379C1590013B2FA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3449D8392379C1580013B2FA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3449D8402379C1580013B2FA;
+			remoteInfo = Piggy;
+		};
+<<<<<<< HEAD
+		86A71B252433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885023F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+<<<<<<< HEAD
+		86A71B272433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885223F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+<<<<<<< HEAD
+		86A71B292433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885423F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+<<<<<<< HEAD
+		86A71B2B2433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885623F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+<<<<<<< HEAD
+		86A71B2D2433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885823F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+<<<<<<< HEAD
+		86A71B2F2433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885A23F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+<<<<<<< HEAD
+		86A71B312433ED8000D6FE61 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+		3469885C23F480BA0056C2CA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+		34F3EBB623F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247AD31C3F04ED00AE3E12;
+			remoteInfo = "SQLite iOS";
+		};
+		34F3EBB823F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247ADD1C3F04ED00AE3E12;
+			remoteInfo = "SQLiteTests iOS";
+		};
+		34F3EBBA23F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B3C1C3F3ED000AE3E12;
+			remoteInfo = "SQLite Mac";
+		};
+		34F3EBBC23F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE247B451C3F3ED000AE3E12;
+			remoteInfo = "SQLiteTests Mac";
+		};
+		34F3EBBE23F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E5A1C6BB0F50062603F;
+			remoteInfo = "SQLite tvOS";
+		};
+		34F3EBC023F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 03A65E631C6BB0F60062603F;
+			remoteInfo = "SQLiteTests tvOS";
+		};
+		34F3EBC223F456CB00E61274 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+>>>>>>> master
+			proxyType = 2;
+			remoteGlobalIDString = A121AC451CA35C79005A31D1;
+			remoteInfo = "SQLite watchOS";
+		};
+/* End PBXContainerItemProxy section */
+
+<<<<<<< HEAD
+=======
+/* Begin PBXCopyFilesBuildPhase section */
+		34F3EBE123F457FB00E61274 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3469886023F480D00056C2CA /* SQLite.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+>>>>>>> master
+/* Begin PBXFileReference section */
+		340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeLiquorInventory.swift; sourceTree = "<group>"; };
+		34228BF623E9D6C800CACF6A /* beer_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beer_inventory.json; sourceTree = "<group>"; };
+		3424E1BA2395681400B501C0 /* NewInventoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInventoryPage.swift; sourceTree = "<group>"; };
+		3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInventoryCount.swift; sourceTree = "<group>"; };
+		3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCountMainPage.swift; sourceTree = "<group>"; };
+		3449D8412379C1580013B2FA /* Piggy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Piggy.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3449D8442379C1580013B2FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3449D8462379C1580013B2FA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		3449D8482379C1580013B2FA /* MainMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
+		3449D84A2379C1590013B2FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3449D84D2379C1590013B2FA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3449D8502379C1590013B2FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3449D8522379C1590013B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3449D8572379C1590013B2FA /* PiggyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3449D85B2379C1590013B2FA /* PiggyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyTests.swift; sourceTree = "<group>"; };
+		3449D85D2379C1590013B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3449D8622379C1590013B2FA /* PiggyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PiggyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3449D8662379C1590013B2FA /* PiggyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyUITests.swift; sourceTree = "<group>"; };
+		3449D8682379C1590013B2FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3449D8742379C67A0013B2FA /* PiggyLogo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PiggyLogo.swift; sourceTree = "<group>"; };
+		345D987623E35C040008CE1C /* InventoryStepper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryStepper.swift; sourceTree = "<group>"; };
+		3462BF8223F23D7000E7640E /* wine_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wine_inventory.json; sourceTree = "<group>"; };
+		3462BF8423F23E3400E7640E /* TakeWineInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeWineInventory.swift; sourceTree = "<group>"; };
+		3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TakeBeerInventory.swift; sourceTree = "<group>"; };
+		3462BF8823F2409F00E7640E /* RecipeCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeCard.swift; sourceTree = "<group>"; };
+		3462BF8A23F2417C00E7640E /* Recipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		3462BF8C23F2435000E7640E /* recipes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = recipes.json; sourceTree = "<group>"; };
+		3469884623F480BA0056C2CA /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		3469885E23F480C40056C2CA /* Piggy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Piggy.entitlements; sourceTree = "<group>"; };
+		3484ACF3239AEEED008F2334 /* EditInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInventory.swift; sourceTree = "<group>"; };
+		34983D94243257C100B9788D /* ViewCurrentInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCurrentInventory.swift; sourceTree = "<group>"; };
+		34983D9D243257CD00B9788D /* GenerateOrderReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOrderReport.swift; sourceTree = "<group>"; };
+		34983D9F2432595C00B9788D /* InventoryReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryReportRow.swift; sourceTree = "<group>"; };
+		349DB40E2382F3CC004B3B8F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		349DB4102382F4DF004B3B8F /* menu.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		349DB4122382F72C004B3B8F /* Helper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		349DB4142382FCF1004B3B8F /* ItemRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemRow.swift; sourceTree = "<group>"; };
+		349E2E442433B09000826005 /* OrderReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderReportRow.swift; sourceTree = "<group>"; };
+		34A28A212429264700B9694D /* EditLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditLiquorInventory.swift; sourceTree = "<group>"; };
+		34A28A2A2429265400B9694D /* EditBeerInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditBeerInventory.swift; sourceTree = "<group>"; };
+		34A28A2C2429265E00B9694D /* EditWineInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditWineInventory.swift; sourceTree = "<group>"; };
+		34A28A2E242928B000B9694D /* EditGroceryInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditGroceryInventory.swift; sourceTree = "<group>"; };
+		34DF3ACC241003D4002E672C /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		34DF3AD524100AD9002E672C /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
+		34DF3AD724100CA1002E672C /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
+		34DF3AD924101491002E672C /* RecipeSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuccess.swift; sourceTree = "<group>"; };
+		34F3EBA823F4546D00E61274 /* LocalDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
+		34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol_Inventory.swift; sourceTree = "<group>"; };
+		34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		34FE2FD2238AD96E00156DBB /* ViewInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewInventory.swift; sourceTree = "<group>"; };
+		34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSearch.swift; sourceTree = "<group>"; };
+		34FE2FD6238ADA2800156DBB /* NewRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewRecipe.swift; sourceTree = "<group>"; };
+		34FE2FD8238ADA3C00156DBB /* BSAN.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BSAN.swift; sourceTree = "<group>"; };
+		34FE2FDA238ADA4F00156DBB /* About.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = About.swift; sourceTree = "<group>"; };
+		34FE2FDC238C36EC00156DBB /* liquor_inventory.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = liquor_inventory.json; sourceTree = "<group>"; };
+		34FE2FDE238C380300156DBB /* InventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryItem.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
+		86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+=======
+		868DA9EA23F3A43E00384235 /* InventoryDB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryDB.swift; sourceTree = "<group>"; };
+>>>>>>> master
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3449D83E2379C1580013B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+<<<<<<< HEAD
+				86A71B452433F59100D6FE61 /* SQLite in Frameworks */,
+=======
+				3469885F23F480D00056C2CA /* SQLite.framework in Frameworks */,
+>>>>>>> master
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D8542379C1590013B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D85F2379C1590013B2FA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3449D8382379C1580013B2FA = {
+			isa = PBXGroup;
+			children = (
+				3449D8432379C1580013B2FA /* Piggy */,
+				3449D85A2379C1590013B2FA /* PiggyTests */,
+				3449D8652379C1590013B2FA /* PiggyUITests */,
+				3449D8422379C1580013B2FA /* Products */,
+<<<<<<< HEAD
+=======
+				3469884623F480BA0056C2CA /* SQLite.xcodeproj */,
+>>>>>>> master
+				868DA9E623F3995600384235 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		3449D8422379C1580013B2FA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3449D8412379C1580013B2FA /* Piggy.app */,
+				3449D8572379C1590013B2FA /* PiggyTests.xctest */,
+				3449D8622379C1590013B2FA /* PiggyUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3449D8432379C1580013B2FA /* Piggy */ = {
+			isa = PBXGroup;
+			children = (
+				3469885E23F480C40056C2CA /* Piggy.entitlements */,
+				34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */,
+				34F3EBA823F4546D00E61274 /* LocalDataBase.swift */,
+				3449D8482379C1580013B2FA /* MainMenu.swift */,
+				3462BF8823F2409F00E7640E /* RecipeCard.swift */,
+				3449D8442379C1580013B2FA /* AppDelegate.swift */,
+				349DB4122382F72C004B3B8F /* Helper.swift */,
+				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
+				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
+				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
+				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
+				3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */,
+				34A28A212429264700B9694D /* EditLiquorInventory.swift */,
+				34A28A2A2429265400B9694D /* EditBeerInventory.swift */,
+				34A28A2C2429265E00B9694D /* EditWineInventory.swift */,
+				34A28A2E242928B000B9694D /* EditGroceryInventory.swift */,
+				34FE2FDA238ADA4F00156DBB /* About.swift */,
+				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
+				34DF3AD724100CA1002E672C /* IngredientRow.swift */,
+				34DF3AD924101491002E672C /* RecipeSuccess.swift */,
+				34DF3AD524100AD9002E672C /* IngredientsList.swift */,
+				34DF3ACC241003D4002E672C /* Ingredient.swift */,
+				3462BF8A23F2417C00E7640E /* Recipe.swift */,
+				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
+				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
+				3462BF8C23F2435000E7640E /* recipes.json */,
+				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
+				3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */,
+				3462BF8423F23E3400E7640E /* TakeWineInventory.swift */,
+				345D987623E35C040008CE1C /* InventoryStepper.swift */,
+				3462BF8223F23D7000E7640E /* wine_inventory.json */,
+				34228BF623E9D6C800CACF6A /* beer_inventory.json */,
+				34FE2FDC238C36EC00156DBB /* liquor_inventory.json */,
+				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
+<<<<<<< HEAD
+=======
+				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
+				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
+				349E2E442433B09000826005 /* OrderReportRow.swift */,
+				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
+				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
+>>>>>>> master
+				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
+				349DB40E2382F3CC004B3B8F /* Menu.swift */,
+				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
+				349DB4102382F4DF004B3B8F /* menu.json */,
+				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
+				3449D84A2379C1590013B2FA /* Assets.xcassets */,
+				3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */,
+				3449D8522379C1590013B2FA /* Info.plist */,
+				3449D84C2379C1590013B2FA /* Preview Content */,
+			);
+			path = Piggy;
+			sourceTree = "<group>";
+		};
+		3449D84C2379C1590013B2FA /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				3449D84D2379C1590013B2FA /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		3449D85A2379C1590013B2FA /* PiggyTests */ = {
+			isa = PBXGroup;
+			children = (
+				3449D85B2379C1590013B2FA /* PiggyTests.swift */,
+				3449D85D2379C1590013B2FA /* Info.plist */,
+			);
+			path = PiggyTests;
+			sourceTree = "<group>";
+		};
+		3449D8652379C1590013B2FA /* PiggyUITests */ = {
+			isa = PBXGroup;
+			children = (
+				86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */,
+				3449D8662379C1590013B2FA /* PiggyUITests.swift */,
+				3449D8682379C1590013B2FA /* Info.plist */,
+			);
+			path = PiggyUITests;
+			sourceTree = "<group>";
+		};
+<<<<<<< HEAD
+		868DA9E623F3995600384235 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+=======
+		3469884723F480BA0056C2CA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3469885123F480BA0056C2CA /* SQLite.framework */,
+				3469885323F480BA0056C2CA /* SQLiteTests iOS.xctest */,
+				3469885523F480BA0056C2CA /* SQLite.framework */,
+				3469885723F480BA0056C2CA /* SQLiteTests Mac.xctest */,
+				3469885923F480BA0056C2CA /* SQLite.framework */,
+				3469885B23F480BA0056C2CA /* SQLiteTests tvOS.xctest */,
+				3469885D23F480BA0056C2CA /* SQLite.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		34F3EBAD23F456CB00E61274 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				34F3EBB723F456CB00E61274 /* SQLite.framework */,
+				34F3EBB923F456CB00E61274 /* SQLiteTests iOS.xctest */,
+				34F3EBBB23F456CB00E61274 /* SQLite.framework */,
+				34F3EBBD23F456CB00E61274 /* SQLiteTests Mac.xctest */,
+				34F3EBBF23F456CB00E61274 /* SQLite.framework */,
+				34F3EBC123F456CB00E61274 /* SQLiteTests tvOS.xctest */,
+				34F3EBC323F456CB00E61274 /* SQLite.framework */,
+>>>>>>> master
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		86A71B1C2433ED8000D6FE61 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+<<<<<<< HEAD
+				86A71B262433ED8000D6FE61 /* SQLite.framework */,
+				86A71B282433ED8000D6FE61 /* SQLiteTests iOS.xctest */,
+				86A71B2A2433ED8000D6FE61 /* SQLite.framework */,
+				86A71B2C2433ED8000D6FE61 /* SQLiteTests Mac.xctest */,
+				86A71B2E2433ED8000D6FE61 /* SQLite.framework */,
+				86A71B302433ED8000D6FE61 /* SQLiteTests tvOS.xctest */,
+				86A71B322433ED8000D6FE61 /* SQLite.framework */,
+=======
+				34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */,
+>>>>>>> master
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3449D8402379C1580013B2FA /* Piggy */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3449D86B2379C1590013B2FA /* Build configuration list for PBXNativeTarget "Piggy" */;
+			buildPhases = (
+				3449D83D2379C1580013B2FA /* Sources */,
+				3449D83E2379C1580013B2FA /* Frameworks */,
+				3449D83F2379C1580013B2FA /* Resources */,
+<<<<<<< HEAD
+=======
+				34F3EBE123F457FB00E61274 /* Embed Frameworks */,
+>>>>>>> master
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Piggy;
+			packageProductDependencies = (
+				86A71B442433F59100D6FE61 /* SQLite */,
+			);
+			productName = Piggy;
+			productReference = 3449D8412379C1580013B2FA /* Piggy.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3449D8562379C1590013B2FA /* PiggyTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3449D86E2379C1590013B2FA /* Build configuration list for PBXNativeTarget "PiggyTests" */;
+			buildPhases = (
+				3449D8532379C1590013B2FA /* Sources */,
+				3449D8542379C1590013B2FA /* Frameworks */,
+				3449D8552379C1590013B2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3449D8592379C1590013B2FA /* PBXTargetDependency */,
+			);
+			name = PiggyTests;
+			productName = PiggyTests;
+			productReference = 3449D8572379C1590013B2FA /* PiggyTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3449D8612379C1590013B2FA /* PiggyUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3449D8712379C1590013B2FA /* Build configuration list for PBXNativeTarget "PiggyUITests" */;
+			buildPhases = (
+				3449D85E2379C1590013B2FA /* Sources */,
+				3449D85F2379C1590013B2FA /* Frameworks */,
+				3449D8602379C1590013B2FA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3449D8642379C1590013B2FA /* PBXTargetDependency */,
+			);
+			name = PiggyUITests;
+			productName = PiggyUITests;
+			productReference = 3449D8622379C1590013B2FA /* PiggyUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3449D8392379C1580013B2FA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1120;
+				LastUpgradeCheck = 1120;
+				ORGANIZATIONNAME = "Group 6";
+				TargetAttributes = {
+					3449D8402379C1580013B2FA = {
+						CreatedOnToolsVersion = 11.2;
+					};
+					3449D8562379C1590013B2FA = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 3449D8402379C1580013B2FA;
+					};
+					3449D8612379C1590013B2FA = {
+						CreatedOnToolsVersion = 11.2;
+						TestTargetID = 3449D8402379C1580013B2FA;
+					};
+				};
+			};
+			buildConfigurationList = 3449D83C2379C1580013B2FA /* Build configuration list for PBXProject "Piggy" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3449D8382379C1580013B2FA;
+			packageReferences = (
+				86A71B432433F59000D6FE61 /* XCRemoteSwiftPackageReference "SQLite.swift" */,
+			);
+			productRefGroup = 3449D8422379C1580013B2FA /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+<<<<<<< HEAD
+					ProductGroup = 86A71B1C2433ED8000D6FE61 /* Products */;
+					ProjectRef = 86A71B1B2433ED8000D6FE61 /* SQLite.xcodeproj */;
+=======
+					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
+					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
+					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+>>>>>>> master
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3449D8402379C1580013B2FA /* Piggy */,
+				3449D8562379C1590013B2FA /* PiggyTests */,
+				3449D8612379C1590013B2FA /* PiggyUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+<<<<<<< HEAD
+		86A71B262433ED8000D6FE61 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 86A71B252433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B282433ED8000D6FE61 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 86A71B272433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B2A2433ED8000D6FE61 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 86A71B292433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B2C2433ED8000D6FE61 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 86A71B2B2433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B2E2433ED8000D6FE61 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 86A71B2D2433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B302433ED8000D6FE61 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 86A71B2F2433ED8000D6FE61 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		86A71B322433ED8000D6FE61 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 86A71B312433ED8000D6FE61 /* PBXContainerItemProxy */;
+=======
+		3469885123F480BA0056C2CA /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3469885023F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885323F480BA0056C2CA /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 3469885223F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885523F480BA0056C2CA /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3469885423F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885723F480BA0056C2CA /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 3469885623F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885923F480BA0056C2CA /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3469885823F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885B23F480BA0056C2CA /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 3469885A23F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3469885D23F480BA0056C2CA /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 3469885C23F480BA0056C2CA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBB723F456CB00E61274 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 34F3EBB623F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBB923F456CB00E61274 /* SQLiteTests iOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests iOS.xctest";
+			remoteRef = 34F3EBB823F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBBB23F456CB00E61274 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 34F3EBBA23F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBBD23F456CB00E61274 /* SQLiteTests Mac.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests Mac.xctest";
+			remoteRef = 34F3EBBC23F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBBF23F456CB00E61274 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 34F3EBBE23F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBC123F456CB00E61274 /* SQLiteTests tvOS.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteTests tvOS.xctest";
+			remoteRef = 34F3EBC023F456CB00E61274 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		34F3EBC323F456CB00E61274 /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 34F3EBC223F456CB00E61274 /* PBXContainerItemProxy */;
+>>>>>>> master
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3449D83F2379C1580013B2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3449D8512379C1590013B2FA /* LaunchScreen.storyboard in Resources */,
+				3462BF8323F23D7000E7640E /* wine_inventory.json in Resources */,
+				3449D84E2379C1590013B2FA /* Preview Assets.xcassets in Resources */,
+				34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */,
+				34FE2FDD238C36EC00156DBB /* liquor_inventory.json in Resources */,
+				349DB4112382F4DF004B3B8F /* menu.json in Resources */,
+				3449D84B2379C1590013B2FA /* Assets.xcassets in Resources */,
+				3462BF8D23F2435000E7640E /* recipes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D8552379C1590013B2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D8602379C1590013B2FA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3449D83D2379C1580013B2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */,
+				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
+				34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */,
+				34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */,
+				340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */,
+				34A28A2B2429265400B9694D /* EditBeerInventory.swift in Sources */,
+				345D987723E35C040008CE1C /* InventoryStepper.swift in Sources */,
+				34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */,
+				34FE2FD9238ADA3C00156DBB /* BSAN.swift in Sources */,
+				3462BF8523F23E3400E7640E /* TakeWineInventory.swift in Sources */,
+				3449D8452379C1580013B2FA /* AppDelegate.swift in Sources */,
+				34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */,
+				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
+				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
+				3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */,
+				3462BF8923F2409F00E7640E /* RecipeCard.swift in Sources */,
+				3462BF8B23F2417C00E7640E /* Recipe.swift in Sources */,
+				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
+				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
+				34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */,
+				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
+				34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */,
+				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
+				349E2E452433B09000826005 /* OrderReportRow.swift in Sources */,
+				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
+				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
+				34A28A2F242928B000B9694D /* EditGroceryInventory.swift in Sources */,
+				349DB4152382FCF1004B3B8F /* ItemRow.swift in Sources */,
+				3449D8752379C67A0013B2FA /* PiggyLogo.swift in Sources */,
+				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
+				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
+<<<<<<< HEAD
+=======
+				34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */,
+				868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */,
+				34A28A222429264700B9694D /* EditLiquorInventory.swift in Sources */,
+				34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */,
+>>>>>>> master
+				349DB4132382F72C004B3B8F /* Helper.swift in Sources */,
+				3462BF8723F23E6900E7640E /* TakeBeerInventory.swift in Sources */,
+				34A28A2D2429265E00B9694D /* EditWineInventory.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D8532379C1590013B2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3449D85C2379C1590013B2FA /* PiggyTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3449D85E2379C1590013B2FA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3449D8672379C1590013B2FA /* PiggyUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3449D8592379C1590013B2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3449D8402379C1580013B2FA /* Piggy */;
+			targetProxy = 3449D8582379C1590013B2FA /* PBXContainerItemProxy */;
+		};
+		3449D8642379C1590013B2FA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3449D8402379C1580013B2FA /* Piggy */;
+			targetProxy = 3449D8632379C1590013B2FA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3449D84F2379C1590013B2FA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3449D8502379C1590013B2FA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3449D8692379C1590013B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3449D86A2379C1590013B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3449D86C2379C1590013B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Piggy/Piggy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = UX94H2EL6M;
+=======
+				DEVELOPMENT_TEAM = WG4BXPYBB3;
+>>>>>>> master
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Piggy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6-Mitch.Piggy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3449D86D2379C1590013B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Piggy/Piggy.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DERIVE_MACCATALYST_PRODUCT_BUNDLE_IDENTIFIER = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Piggy/Preview Content\"";
+<<<<<<< HEAD
+				DEVELOPMENT_TEAM = UX94H2EL6M;
+=======
+				DEVELOPMENT_TEAM = WG4BXPYBB3;
+>>>>>>> master
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Piggy/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 0.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6-Mitch.Piggy";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTS_MACCATALYST = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		3449D86F2379C1590013B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiggyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.PiggyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggy.app/Piggy";
+			};
+			name = Debug;
+		};
+		3449D8702379C1590013B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiggyTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.PiggyTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Piggy.app/Piggy";
+			};
+			name = Release;
+		};
+		3449D8722379C1590013B2FA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiggyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.PiggyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Piggy;
+			};
+			name = Debug;
+		};
+		3449D8732379C1590013B2FA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PiggyUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Group-6.PiggyUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Piggy;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3449D83C2379C1580013B2FA /* Build configuration list for PBXProject "Piggy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3449D8692379C1590013B2FA /* Debug */,
+				3449D86A2379C1590013B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3449D86B2379C1590013B2FA /* Build configuration list for PBXNativeTarget "Piggy" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3449D86C2379C1590013B2FA /* Debug */,
+				3449D86D2379C1590013B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3449D86E2379C1590013B2FA /* Build configuration list for PBXNativeTarget "PiggyTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3449D86F2379C1590013B2FA /* Debug */,
+				3449D8702379C1590013B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3449D8712379C1590013B2FA /* Build configuration list for PBXNativeTarget "PiggyUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3449D8722379C1590013B2FA /* Debug */,
+				3449D8732379C1590013B2FA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		86A71B432433F59000D6FE61 /* XCRemoteSwiftPackageReference "SQLite.swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/stephencelis/SQLite.swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		86A71B442433F59100D6FE61 /* SQLite */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 86A71B432433F59000D6FE61 /* XCRemoteSwiftPackageReference "SQLite.swift" */;
+			productName = SQLite;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 3449D8392379C1580013B2FA /* Project object */;
+}
