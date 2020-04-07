@@ -47,6 +47,7 @@
 		34DF3AD624100AD9002E672C /* IngredientsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD524100AD9002E672C /* IngredientsList.swift */; };
 		34DF3AD824100CA1002E672C /* IngredientRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD724100CA1002E672C /* IngredientRow.swift */; };
 		34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34DF3AD924101491002E672C /* RecipeSuccess.swift */; };
+		34E7D507243BA40D00F802DA /* OrderTotalCounter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */; };
 		34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA823F4546D00E61274 /* LocalDataBase.swift */; };
 		34F3EBAB23F4546D00E61274 /* Alcohol_Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */; };
 		34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34FE2FD2238AD96E00156DBB /* ViewInventory.swift */; };
@@ -237,6 +238,7 @@
 		34DF3AD524100AD9002E672C /* IngredientsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsList.swift; sourceTree = "<group>"; };
 		34DF3AD724100CA1002E672C /* IngredientRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientRow.swift; sourceTree = "<group>"; };
 		34DF3AD924101491002E672C /* RecipeSuccess.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeSuccess.swift; sourceTree = "<group>"; };
+		34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderTotalCounter.swift; sourceTree = "<group>"; };
 		34F3EBA823F4546D00E61274 /* LocalDataBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocalDataBase.swift; sourceTree = "<group>"; };
 		34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alcohol_Inventory.swift; sourceTree = "<group>"; };
 		34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
@@ -339,8 +341,9 @@
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
 				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
-				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
+				34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */,
+				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
 				86FDF62C243CDC4100A9D553 /* InventoryController.swift */,
 				86FDF635243CDF0A00A9D553 /* InventoryDBitem.swift */,
@@ -512,12 +515,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
-					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
 					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
+					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -700,6 +703,7 @@
 				86FDF62D243CDC4200A9D553 /* InventoryController.swift in Sources */,
 				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
+				34E7D507243BA40D00F802DA /* OrderTotalCounter.swift in Sources */,
 				34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */,
 				868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */,
 				34A28A222429264700B9694D /* EditLiquorInventory.swift in Sources */,

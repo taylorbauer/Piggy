@@ -10,6 +10,8 @@ import SwiftUI
 
 struct OrderReportRow: View {
     @State var item: InventoryItem
+    @Binding var subtotal: Float
+    // @Binding var total : Float
     var body: some View {
         HStack {
             Text(item.name)
@@ -24,10 +26,15 @@ struct OrderReportRow: View {
                             .foregroundColor((item.par - item.currentCount <= 0) ? .green : .red)
                         .bold()
                         Text("x")
-                        Text("$" + String(format: "%.2f", item.price) + " = ")
+                        Text("$" + String(format: "%.2f", item.price) + "   = ")
                         Text(String(format: "$%.2f", item.price * (Float((item.par - item.currentCount)))))
                             .bold()
+//                         Text(String(subtotal))
+                    }.onAppear {
+//                        self.subtotal = self.item.price * (Float((self.item.par - self.item.currentCount)));
+                        self.subtotal += (self.item.price * (Float((self.item.par - self.item.currentCount))))
                     }
+                    
             }
         //.padding()
             
@@ -35,8 +42,8 @@ struct OrderReportRow: View {
     }
 }
 
-struct OrderReportRow_Previews: PreviewProvider {
-    static var previews: some View {
-        OrderReportRow(item: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4, price: 10.25))
-    }
-}
+//struct OrderReportRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        OrderReportRow(item: InventoryItem(id: UUID(), name: "FAKEITEM", lastCount: 10, currentCount: 0, par: 4, price: 10.25), subtotal: Binding<Float>((0)))
+//    }
+//}
