@@ -17,6 +17,7 @@ struct RecipeSearch: View {
             $0.name < $1.name
         }
     var body: some View {
+        ScrollView {
         VStack {
             Text("Currently Stored Recipes")
                 .padding()
@@ -57,6 +58,7 @@ struct RecipeSearch: View {
             .padding(.bottom)
             
         }
+    }
     }
 }
 

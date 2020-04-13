@@ -34,5 +34,50 @@
     "ingredientCount" : 3,
     "ingredients": [["1 oz", "Campari"], ["1 oz", "Gin"], ["1 oz", "Sweet Vermouth"]],
     "garnish" : "Lemon thumb"
+  },
+  {
+    "id": "67e335e0-e834-4b8f-80a1-68b69e9bd6f8",
+    "name": "Manhattan",
+    "method": "Stirred",
+    "glass": "Rocks / Coupe",
+    "ingredientCount" : 3,
+    "ingredients": [["2 oz", "Bourbon"], ["3/4 oz", "Sweet Vermouth"], ["3 shakes", "Angostura Bitters"]],
+    "garnish" : "Marischino Cherry"
+  },
+  {
+    "id": "8b2e39a9-d0d5-4574-9aab-31683fcaf046",
+    "name": "Gimlet",
+    "method": "Stirred",
+    "glass": "Nick and Nora",
+    "ingredientCount" : 3,
+    "ingredients": [["2 oz", "Gin"], ["3/4 oz", "Simple"], ["1 oz", "Lime Juice"]],
+    "garnish" : "Lime peel"
+  },
+  {
+    "id": "c9a9a60c-fd67-4a40-bd0c-4ab02bd52062",
+    "name": "Gibson",
+    "method": "Stirred",
+    "glass": "Coupe",
+    "ingredientCount" : 2,
+    "ingredients": [["2 oz", "Gin"], ["1/2 oz", "Dry Vermouth"]],
+    "garnish" : "Cocktail Onion"
+  },
+  {
+    "id": "5a4801c6-00c1-4ca3-8149-7a9089b7552e",
+    "name": "Aviation",
+    "method": "Stirred",
+    "glass": "Coupe",
+    "ingredientCount" : 4,
+    "ingredients": [["1 1/2 oz", "Gin"], ["3/4 oz", "Lemon Juice"], ["1/4 oz", "Creme de Violette"], ["3/4 oz", "Luxardo Marischino"]],
+    "garnish" : "Marischino Cherry"
+  },
+  {
+    "id": "ec23c645-e385-4459-854e-42ffec9e3294",
+    "name": "Dark and Stormy",
+    "method": "Built",
+    "glass": "Collins",
+    "ingredientCount" : 3,
+    "ingredients": [["2 oz", "Dark Rum"], ["3 oz", "Ginger Beer"], ["1/2 oz", "Lime Juice"]],
+    "garnish" : "Lime Wedge"
   }
 ]
