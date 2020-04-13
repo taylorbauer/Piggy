@@ -25,30 +25,33 @@ struct MainMenu: View {
                         //For extensibilitiy's sake, everything in this menu can be eventually reduced down to objects of ItemRow
                         Section(header: Text("Inventory").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)){
-                        NavigationLink(destination: ViewInventory()) {
-                            Text("View Current Inventory / Order Reports")
-                            }
-                            NavigationLink(destination: NewInventoryPage()) {
-                                Text("Take Inventory")
-                            }
+                                NavigationLink(destination: ViewInventory()) {
+                                    Text("View Current Inventory / Order Reports")
+                                }
+                                NavigationLink(destination: NewInventoryPage()) {
+                                    Text("Take Inventory")
+                                }
                         }
                         
                         Section(header: Text("Recipes").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)) {
-                            NavigationLink(destination: RecipeSearch()) {
-                                Text("View Recipes")
-                            }
-                            NavigationLink(destination: NewRecipe()) {
-                                Text("Create New Recipe")
-                            }
+                                NavigationLink(destination: RecipeSearch()) {
+                                    Text("View Recipes")
+                                }
+                                NavigationLink(destination: NewRecipe()) {
+                                    Text("Create New Recipe")
+                                }
+                                NavigationLink(destination: NewRecipe()) {
+                                    Text("Edit Existing Recipe")
+                                }
                         }
                         
                         Section(header: Text("Business Analytics").foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                             .font(.title)) {
-                            NavigationLink(destination: BSAN()) {
-                                Text("View Business Analytics\n(🚧UNDER CONSTRUCTION👷)")
-                            }
-                            
+                                NavigationLink(destination: BSAN()) {
+                                    Text("View Business Analytics\n(🚧UNDER CONSTRUCTION👷)")
+                                }
+                                
                         }
                         
                         
@@ -61,7 +64,7 @@ struct MainMenu: View {
                     .navigationBarTitle("Main Menu")
                 }
             }.navigationViewStyle(StackNavigationViewStyle())
-            .listStyle(GroupedListStyle())
+                .listStyle(GroupedListStyle())
             
         }
         
@@ -71,6 +74,6 @@ struct MainMenu: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         MainMenu()
-            //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
+        //.previewDevice(PreviewDevice(rawValue: "iPad Pro (10.5-inch)"))
     }
 }

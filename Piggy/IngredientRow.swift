@@ -8,7 +8,7 @@
 //  These are the rows of textfields that the user will type
 //  ingredient names into in NewRecipe
 //
-//
+
 
 import SwiftUI
 

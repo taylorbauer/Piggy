@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		340D09B223888E51003DDE76 /* TakeLiquorInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */; };
+		341F9F062444DC7F00225E97 /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F9F052444DC7F00225E97 /* EditRecipe.swift */; };
+		341F9F0F2444DFC000225E97 /* EditRecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */; };
 		34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34228BF623E9D6C800CACF6A /* beer_inventory.json */; };
 		3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BA2395681400B501C0 /* NewInventoryPage.swift */; };
 		3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */; };
@@ -193,6 +195,8 @@
 
 /* Begin PBXFileReference section */
 		340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeLiquorInventory.swift; sourceTree = "<group>"; };
+		341F9F052444DC7F00225E97 /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
+		341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeDetails.swift; sourceTree = "<group>"; };
 		34228BF623E9D6C800CACF6A /* beer_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beer_inventory.json; sourceTree = "<group>"; };
 		3424E1BA2395681400B501C0 /* NewInventoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInventoryPage.swift; sourceTree = "<group>"; };
 		3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInventoryCount.swift; sourceTree = "<group>"; };
@@ -322,13 +326,15 @@
 				34A28A2C2429265E00B9694D /* EditWineInventory.swift */,
 				34A28A2E242928B000B9694D /* EditGroceryInventory.swift */,
 				34FE2FDA238ADA4F00156DBB /* About.swift */,
-				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
 				34DF3AD724100CA1002E672C /* IngredientRow.swift */,
 				34DF3AD924101491002E672C /* RecipeSuccess.swift */,
 				34DF3AD524100AD9002E672C /* IngredientsList.swift */,
 				34DF3ACC241003D4002E672C /* Ingredient.swift */,
 				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
+				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
+				341F9F052444DC7F00225E97 /* EditRecipe.swift */,
+				341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				3462BF8C23F2435000E7640E /* recipes.json */,
 				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
@@ -515,12 +521,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
-					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
 					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
+					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -686,9 +692,11 @@
 				3449D8472379C1580013B2FA /* SceneDelegate.swift in Sources */,
 				34FE2FDB238ADA4F00156DBB /* About.swift in Sources */,
 				3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */,
+				341F9F0F2444DFC000225E97 /* EditRecipeDetails.swift in Sources */,
 				3462BF8923F2409F00E7640E /* RecipeCard.swift in Sources */,
 				3462BF8B23F2417C00E7640E /* Recipe.swift in Sources */,
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
+				341F9F062444DC7F00225E97 /* EditRecipe.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
 				34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */,
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
