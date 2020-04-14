@@ -8,7 +8,7 @@
 
 import Foundation
 
-class InventoryDBitem {
+struct InventoryDBitem: Hashable {
 	
 	var name: String?
 	var group_id: Int

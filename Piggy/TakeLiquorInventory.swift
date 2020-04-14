@@ -25,11 +25,14 @@ struct TakeLiquorInventory: View {
     // This list of objects is called "items"
     let items = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
 	
+	@State var InvItems: [InventoryDBitem] = []
+	
 	@State var name: String = ""
 	@State var group_id: Int = 0
 	@State var InvCount: Int = 0
 	@State var numItems: Int = 1
 
+	
     var body: some View {
         VStack() {
             Text("New Liquor Inventory Count")
@@ -41,7 +44,7 @@ struct TakeLiquorInventory: View {
             List {
                 // Here, "bottle" is each instance of class InventoryItem
                 // Now, "items" is a list of "bottle"s that we use to generate the views
-				ForEach(0..<numItems) { bottle in
+				ForEach(0..<numItems) { singleItem in
                     VStack(alignment: .leading) {
                         /*Text(bottle.name)
                             .font(.headline)
@@ -72,6 +75,7 @@ struct TakeLiquorInventory: View {
 									Text("\(number)")
 								}
 							}.pickerStyle(WheelPickerStyle())
+							
 						}
 						
 						
@@ -80,8 +84,10 @@ struct TakeLiquorInventory: View {
 				VStack(alignment: .center) {
 					Button(action: {
 						self.numItems += 1
+						self.InvItems.append(InventoryDBitem(name: self.name, group_id: self.group_id, InvCount: self.InvCount))
+						//doesnt work.. I dont know why
 					}) {
-						Image(systemName: "plus.circle")
+						Image(systemName: "plus.circle").foregroundColor(.green)
 						Text("Add another item")
 					}
 				.padding()
