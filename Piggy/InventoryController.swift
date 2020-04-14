@@ -74,16 +74,16 @@ class InventoryController: UIViewController, UITableViewDataSource, UITableViewD
 		}
 		
 		while(sqlite3_step(stmt) == SQLITE_ROW){
-			let id = sqlite3_column_int(stmt, 0)
+			//let id = sqlite3_column_int(stmt, 0)
 			let name = String(cString: sqlite3_column_text(stmt, 1))
 			let group_id = sqlite3_column_int(stmt, 2)
 			let InvCount = sqlite3_column_int(stmt, 3)
-			let CurrPrice = sqlite3_column_double(stmt, 4)
+			/*let CurrPrice = sqlite3_column_double(stmt, 4)
 			let PrevPrice = sqlite3_column_double(stmt, 5)
 			let COGS = sqlite3_column_double(stmt, 6)
-			let Sold = sqlite3_column_int(stmt, 7)
+			let Sold = sqlite3_column_int(stmt, 7)*/
 			
-			InvList.append(InventoryDBitem(id: Int(id), name: String(describing: name), group_id: Int(group_id), InvCount: Int(InvCount), CurrPrice: Double(CurrPrice), PrevPrice: Double(PrevPrice), COGS: Double(COGS), Sold: Int(Sold)))
+			InvList.append(InventoryDBitem(name: String(describing: name), group_id: Int(group_id), InvCount: Int(InvCount)))
 		}
 		
 	}

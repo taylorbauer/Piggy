@@ -25,7 +25,10 @@ struct TakeLiquorInventory: View {
     // This list of objects is called "items"
     let items = Bundle.main.decode([InventoryItem].self, from: "liquor_inventory.json")
 	
-	@State var name = ""
+	@State var name: String = ""
+	@State var group_id: Int = 0
+	@State var InvCount: Int = 0
+	@State var numItems: Int = 1
 
     var body: some View {
         VStack() {
@@ -38,7 +41,7 @@ struct TakeLiquorInventory: View {
             List {
                 // Here, "bottle" is each instance of class InventoryItem
                 // Now, "items" is a list of "bottle"s that we use to generate the views
-                ForEach(items) { bottle in
+				ForEach(0..<numItems) { bottle in
                     VStack(alignment: .leading) {
                         /*Text(bottle.name)
                             .font(.headline)
@@ -55,9 +58,34 @@ struct TakeLiquorInventory: View {
                         }
                         Spacer()
                         Text("Last \(bottle.name) Count: \(bottle.lastCount)")*/
-						TextField("Liquor Name", text: self.$name)
+						HStack {
+							VStack {
+								TextField("Name", text: self.$name)
+								Picker("Alcohol Type", selection: self.$group_id) {
+									Text("Liquor").tag(0)
+									Text("Beer").tag(1)
+									Text("Wine").tag(2)
+								}.pickerStyle(SegmentedPickerStyle())
+							}
+							Picker("", selection: self.$InvCount) {
+								ForEach(0..<150) { number in
+									Text("\(number)")
+								}
+							}.pickerStyle(WheelPickerStyle())
+						}
+						
+						
                     }
-                    }
+				}
+				VStack(alignment: .center) {
+					Button(action: {
+						self.numItems += 1
+					}) {
+						Image(systemName: "plus.circle")
+						Text("Add another item")
+					}
+				.padding()
+				}
                 HStack {
                     Spacer()
                     Button(action: {

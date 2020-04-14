@@ -10,24 +10,14 @@ import Foundation
 
 class InventoryDBitem {
 	
-	var id: Int
 	var name: String?
 	var group_id: Int
 	var InvCount: Int
-	var CurrPrice: Double
-	var PrevPrice: Double
-	var COGS: Double
-	var Sold: Int
 	
-	init(id: Int, name: String?, group_id: Int, InvCount: Int, CurrPrice: Double, PrevPrice: Double, COGS: Double, Sold: Int){
-		self.id = id
+	init(name: String?, group_id: Int, InvCount: Int){
 		self.name = name
 		self.group_id = group_id
 		self.InvCount = InvCount
-		self.CurrPrice = CurrPrice
-		self.PrevPrice = PrevPrice
-		self.COGS = COGS
-		self.Sold = Sold
 	}
 	
 	var InvList = [InventoryDBitem]()
