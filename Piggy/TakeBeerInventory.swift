@@ -19,7 +19,7 @@ struct TakeBeerInventory: View {
         VStack() {
             Text("New Beer Inventory Count")
                 .font(.title)
-                .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+//                .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                 .multilineTextAlignment(.leading)
                 .padding(.leading)
             
@@ -29,6 +29,7 @@ struct TakeBeerInventory: View {
                     VStack(alignment: .leading) {
                         Text(bottle.name)
                             .font(.headline)
+                            .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                         HStack {
                             
                             InventoryStepper(itemType: bottle)
@@ -36,7 +37,7 @@ struct TakeBeerInventory: View {
                             Spacer()
                         }
                         Spacer()
-                        Text("Last \(bottle.name) Count: \(bottle.lastCount)")
+                        Text("Last \(bottle.name) Count: \(bottle.lastCount)").font(.subheadline)
                     }
                     }
                 HStack {

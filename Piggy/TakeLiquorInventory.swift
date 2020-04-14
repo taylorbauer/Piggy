@@ -34,7 +34,7 @@ struct TakeLiquorInventory: View {
         VStack() {
             Text("New Liquor Inventory Count")
                 .font(.title)
-                .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+//                .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                 .multilineTextAlignment(.leading)
                 .padding(.leading)
             
