@@ -30,8 +30,9 @@ struct EditRecipe: View {
                                     .bold()
                                     .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
                                     .padding()
+                                //Spacer()
                                 Text(recipe.glass)
- 
+                                //Spacer()
                                 Text(recipe.method)
                                     .padding()
                             }
