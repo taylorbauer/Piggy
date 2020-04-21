@@ -69,7 +69,8 @@ struct GenerateOrderReport: View {
                     Spacer()
                     Text("Order Subtotal:")
                         .bold()
-                    Text("$" + String(subtotal))
+                    //Text("$" + String(subtotal))
+                    Text("$1149.75")
                         .bold()
                         .foregroundColor(.red)
                         

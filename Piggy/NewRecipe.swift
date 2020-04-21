@@ -74,7 +74,7 @@ struct NewRecipe: View {
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
                 Text("Garnish")
                     .font(.headline)
-                TextField("Garnish", text: $tempGlass)
+                TextField("Garnish", text: $tempGarnish)
                     .padding()
                     .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
                 }

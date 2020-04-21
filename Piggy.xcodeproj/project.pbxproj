@@ -33,6 +33,7 @@
 		3469885F23F480D00056C2CA /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3469885123F480BA0056C2CA /* SQLite.framework */; };
 		3469886023F480D00056C2CA /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3469885123F480BA0056C2CA /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484ACF3239AEEED008F2334 /* EditInventory.swift */; };
+		348E45CD244F54FD0069B51D /* InventoryDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348E45CB244F54FD0069B51D /* InventoryDBModel.xcdatamodeld */; };
 		34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D94243257C100B9788D /* ViewCurrentInventory.swift */; };
 		34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9D243257CD00B9788D /* GenerateOrderReport.swift */; };
 		34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9F2432595C00B9788D /* InventoryReportRow.swift */; };
@@ -226,6 +227,7 @@
 		3469884623F480BA0056C2CA /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
 		3469885E23F480C40056C2CA /* Piggy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Piggy.entitlements; sourceTree = "<group>"; };
 		3484ACF3239AEEED008F2334 /* EditInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInventory.swift; sourceTree = "<group>"; };
+		348E45CC244F54FD0069B51D /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
 		34983D94243257C100B9788D /* ViewCurrentInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCurrentInventory.swift; sourceTree = "<group>"; };
 		34983D9D243257CD00B9788D /* GenerateOrderReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOrderReport.swift; sourceTree = "<group>"; };
 		34983D9F2432595C00B9788D /* InventoryReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryReportRow.swift; sourceTree = "<group>"; };
@@ -311,14 +313,19 @@
 			children = (
 				3469885E23F480C40056C2CA /* Piggy.entitlements */,
 				34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */,
+				348E45CB244F54FD0069B51D /* InventoryDBModel.xcdatamodeld */,
+				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				34F3EBA823F4546D00E61274 /* LocalDataBase.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
+				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
+				341F9F052444DC7F00225E97 /* EditRecipe.swift */,
+				3462BF8423F23E3400E7640E /* TakeWineInventory.swift */,
+				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
 				3462BF8823F2409F00E7640E /* RecipeCard.swift */,
 				3449D8442379C1580013B2FA /* AppDelegate.swift */,
 				349DB4122382F72C004B3B8F /* Helper.swift */,
 				3449D8462379C1580013B2FA /* SceneDelegate.swift */,
 				34FE2FD8238ADA3C00156DBB /* BSAN.swift */,
-				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
 				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
 				3424E1BE23956E8600B501C0 /* NewCountMainPage.swift */,
 				34A28A212429264700B9694D /* EditLiquorInventory.swift */,
@@ -333,13 +340,11 @@
 				3462BF8A23F2417C00E7640E /* Recipe.swift */,
 				349DB4142382FCF1004B3B8F /* ItemRow.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
-				341F9F052444DC7F00225E97 /* EditRecipe.swift */,
 				341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */,
 				34FE2FD4238ADA0800156DBB /* RecipeSearch.swift */,
 				3462BF8C23F2435000E7640E /* recipes.json */,
-				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
 				3462BF8623F23E6900E7640E /* TakeBeerInventory.swift */,
-				3462BF8423F23E3400E7640E /* TakeWineInventory.swift */,
+				340D09B123888E51003DDE76 /* TakeLiquorInventory.swift */,
 				345D987623E35C040008CE1C /* InventoryStepper.swift */,
 				3462BF8223F23D7000E7640E /* wine_inventory.json */,
 				34228BF623E9D6C800CACF6A /* beer_inventory.json */,
@@ -347,7 +352,6 @@
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
 				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
-				34983D9D243257CD00B9788D /* GenerateOrderReport.swift */,
 				34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */,
 				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
@@ -355,7 +359,6 @@
 				86FDF635243CDF0A00A9D553 /* InventoryDBitem.swift */,
 				3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */,
 				349DB40E2382F3CC004B3B8F /* Menu.swift */,
-				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				349DB4102382F4DF004B3B8F /* menu.json */,
 				3449D8742379C67A0013B2FA /* PiggyLogo.swift */,
 				3449D84A2379C1590013B2FA /* Assets.xcassets */,
@@ -678,6 +681,7 @@
 			files = (
 				34F3EBAA23F4546D00E61274 /* LocalDataBase.swift in Sources */,
 				3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */,
+				348E45CD244F54FD0069B51D /* InventoryDBModel.xcdatamodeld in Sources */,
 				34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */,
 				86FDF636243CDF0A00A9D553 /* InventoryDBitem.swift in Sources */,
 				34DF3ACD241003D4002E672C /* Ingredient.swift in Sources */,
@@ -1053,6 +1057,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		348E45CB244F54FD0069B51D /* InventoryDBModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				348E45CC244F54FD0069B51D /* CoreDataModel.xcdatamodel */,
+			);
+			currentVersion = 348E45CC244F54FD0069B51D /* CoreDataModel.xcdatamodel */;
+			path = InventoryDBModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 3449D8392379C1580013B2FA /* Project object */;
 }
