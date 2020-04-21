@@ -34,6 +34,7 @@
 		3469886023F480D00056C2CA /* SQLite.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3469885123F480BA0056C2CA /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3484ACF4239AEEED008F2334 /* EditInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3484ACF3239AEEED008F2334 /* EditInventory.swift */; };
 		348E45CD244F54FD0069B51D /* InventoryDBModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 348E45CB244F54FD0069B51D /* InventoryDBModel.xcdatamodeld */; };
+		348E45D6244F59210069B51D /* tayDBtestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 348E45D5244F59210069B51D /* tayDBtestView.swift */; };
 		34983D95243257C100B9788D /* ViewCurrentInventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D94243257C100B9788D /* ViewCurrentInventory.swift */; };
 		34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9D243257CD00B9788D /* GenerateOrderReport.swift */; };
 		34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34983D9F2432595C00B9788D /* InventoryReportRow.swift */; };
@@ -228,6 +229,7 @@
 		3469885E23F480C40056C2CA /* Piggy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Piggy.entitlements; sourceTree = "<group>"; };
 		3484ACF3239AEEED008F2334 /* EditInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditInventory.swift; sourceTree = "<group>"; };
 		348E45CC244F54FD0069B51D /* CoreDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = CoreDataModel.xcdatamodel; sourceTree = "<group>"; };
+		348E45D5244F59210069B51D /* tayDBtestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tayDBtestView.swift; sourceTree = "<group>"; };
 		34983D94243257C100B9788D /* ViewCurrentInventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCurrentInventory.swift; sourceTree = "<group>"; };
 		34983D9D243257CD00B9788D /* GenerateOrderReport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateOrderReport.swift; sourceTree = "<group>"; };
 		34983D9F2432595C00B9788D /* InventoryReportRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryReportRow.swift; sourceTree = "<group>"; };
@@ -314,6 +316,7 @@
 				3469885E23F480C40056C2CA /* Piggy.entitlements */,
 				34F3EBA923F4546D00E61274 /* Alcohol_Inventory.swift */,
 				348E45CB244F54FD0069B51D /* InventoryDBModel.xcdatamodeld */,
+				348E45D5244F59210069B51D /* tayDBtestView.swift */,
 				34FE2FDE238C380300156DBB /* InventoryItem.swift */,
 				34F3EBA823F4546D00E61274 /* LocalDataBase.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
@@ -707,6 +710,7 @@
 				34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */,
 				3449D8492379C1580013B2FA /* MainMenu.swift in Sources */,
 				349E2E452433B09000826005 /* OrderReportRow.swift in Sources */,
+				348E45D6244F59210069B51D /* tayDBtestView.swift in Sources */,
 				34FE2FD3238AD96E00156DBB /* ViewInventory.swift in Sources */,
 				34FE2FD5238ADA0800156DBB /* RecipeSearch.swift in Sources */,
 				34A28A2F242928B000B9694D /* EditGroceryInventory.swift in Sources */,
