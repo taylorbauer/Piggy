@@ -11,6 +11,8 @@
 		341F9F062444DC7F00225E97 /* EditRecipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F9F052444DC7F00225E97 /* EditRecipe.swift */; };
 		341F9F0F2444DFC000225E97 /* EditRecipeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */; };
 		3420FAAD2457419100CF42EB /* AddInventoryItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420FAAC2457419100CF42EB /* AddInventoryItem.swift */; };
+		3420FABF24574F8D00CF42EB /* ViewCurrentInventory2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420FABE24574F8D00CF42EB /* ViewCurrentInventory2.swift */; };
+		3420FAC32457514800CF42EB /* InventoryReportRow2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3420FAC22457514800CF42EB /* InventoryReportRow2.swift */; };
 		34228BF723E9D6C800CACF6A /* beer_inventory.json in Resources */ = {isa = PBXBuildFile; fileRef = 34228BF623E9D6C800CACF6A /* beer_inventory.json */; };
 		3424E1BB2395681400B501C0 /* NewInventoryPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BA2395681400B501C0 /* NewInventoryPage.swift */; };
 		3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */; };
@@ -201,6 +203,8 @@
 		341F9F052444DC7F00225E97 /* EditRecipe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipe.swift; sourceTree = "<group>"; };
 		341F9F0E2444DFC000225E97 /* EditRecipeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditRecipeDetails.swift; sourceTree = "<group>"; };
 		3420FAAC2457419100CF42EB /* AddInventoryItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddInventoryItem.swift; sourceTree = "<group>"; };
+		3420FABE24574F8D00CF42EB /* ViewCurrentInventory2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCurrentInventory2.swift; sourceTree = "<group>"; };
+		3420FAC22457514800CF42EB /* InventoryReportRow2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryReportRow2.swift; sourceTree = "<group>"; };
 		34228BF623E9D6C800CACF6A /* beer_inventory.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = beer_inventory.json; sourceTree = "<group>"; };
 		3424E1BA2395681400B501C0 /* NewInventoryPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewInventoryPage.swift; sourceTree = "<group>"; };
 		3424E1BC23956E4A00B501C0 /* ResumeInventoryCount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResumeInventoryCount.swift; sourceTree = "<group>"; };
@@ -323,6 +327,9 @@
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				348E45D5244F59210069B51D /* tayDBtestView.swift */,
 				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
+				3420FABE24574F8D00CF42EB /* ViewCurrentInventory2.swift */,
+				3420FAC22457514800CF42EB /* InventoryReportRow2.swift */,
+				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
 				3420FAAC2457419100CF42EB /* AddInventoryItem.swift */,
 				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
@@ -357,7 +364,6 @@
 				3462BF8223F23D7000E7640E /* wine_inventory.json */,
 				34228BF623E9D6C800CACF6A /* beer_inventory.json */,
 				34FE2FDC238C36EC00156DBB /* liquor_inventory.json */,
-				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
 				34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */,
 				349E2E442433B09000826005 /* OrderReportRow.swift */,
 				868DA9EA23F3A43E00384235 /* InventoryDB.swift */,
@@ -709,6 +715,7 @@
 				34FE2FDF238C380300156DBB /* InventoryItem.swift in Sources */,
 				341F9F062444DC7F00225E97 /* EditRecipe.swift in Sources */,
 				34FE2FD7238ADA2800156DBB /* NewRecipe.swift in Sources */,
+				3420FAC32457514800CF42EB /* InventoryReportRow2.swift in Sources */,
 				34983D9E243257CD00B9788D /* GenerateOrderReport.swift in Sources */,
 				3424E1BF23956E8600B501C0 /* NewCountMainPage.swift in Sources */,
 				34983DA02432595C00B9788D /* InventoryReportRow.swift in Sources */,
@@ -724,6 +731,7 @@
 				3424E1BD23956E4A00B501C0 /* ResumeInventoryCount.swift in Sources */,
 				349DB40F2382F3CC004B3B8F /* Menu.swift in Sources */,
 				34E7D507243BA40D00F802DA /* OrderTotalCounter.swift in Sources */,
+				3420FABF24574F8D00CF42EB /* ViewCurrentInventory2.swift in Sources */,
 				34DF3ADA24101491002E672C /* RecipeSuccess.swift in Sources */,
 				868DA9EB23F3A43E00384235 /* InventoryDB.swift in Sources */,
 				34A28A222429264700B9694D /* EditLiquorInventory.swift in Sources */,

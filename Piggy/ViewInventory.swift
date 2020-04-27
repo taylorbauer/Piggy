@@ -23,7 +23,7 @@ struct ViewInventory: View {
                                     Image("liquor 2")
                                         .resizable()
                                         .frame(width: 64, height: 64)
-                                    NavigationLink(destination: ViewCurrentInventory()) {
+                                    NavigationLink(destination: ViewCurrentInventory2()) {
                                         Text("View Current Inventory")
                                     }
                                 }

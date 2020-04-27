@@ -22,26 +22,28 @@ struct AddInventoryItem: View {
     
     var body: some View {
         NavigationView {
-            VStack {
-                Text("Add new inventory item")
-                    .font(.title)
-                    .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
-                    .padding()
-                Group{
+            ScrollView {
+                VStack {
+                    Text("Add new inventory item")
+                        .font(.title)
+                        .foregroundColor(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0))
+                        .padding()
+                    
                     Group{
-                        Picker(selection: $category, label: Text("Type").bold()) {
-                            ForEach(0 ..< categories.count) {
-                                Text(self.categories[$0])
+                        Group{
+                            Picker(selection: $category, label: Text("Type").bold()) {
+                                ForEach(0 ..< categories.count) {
+                                    Text(self.categories[$0])
+                                }
                             }
-                        }
-                        
-                        
-                        Text("Item Name")
-                            .font(.headline)
-                        
-                        TextField("Name", text: $name)
-                            .padding()
-                            .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
+                            
+                            
+                            Text("Item Name")
+                                .font(.headline)
+                            
+                            TextField("Name", text: $name)
+                                .padding()
+                                .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
                             
                             Text("Price")
                                 .font(.headline)
@@ -68,7 +70,7 @@ struct AddInventoryItem: View {
                     NavigationLink(destination: NewInventoryPage()) {
                         Button("Add") {
                             print("Successfully added to database")
-                            let inventorySample = InventoryDBItem(context: self.managedObjectContext)
+                            let inventorySample = InventoryDBItem2(context: self.managedObjectContext)
                             inventorySample.id = UUID()
                             inventorySample.name = self.name
                             inventorySample.currentCount = Int16(self.initialCount)!
@@ -92,13 +94,14 @@ struct AddInventoryItem: View {
                         }
                         .font(.title).padding().background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 1.0)).foregroundColor(.white)
                     }.padding()
-            }.padding()
+                }.padding()
             }
         }
-        
-        struct AddInventoryItem_Previews: PreviewProvider {
-            static var previews: some View {
-                AddInventoryItem()
-            }
+    }
+    
+    struct AddInventoryItem_Previews: PreviewProvider {
+        static var previews: some View {
+            AddInventoryItem()
         }
+    }
 }

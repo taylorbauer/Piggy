@@ -11,7 +11,7 @@ import SwiftUI
 struct tayDBtestView: View {
     
     @Environment(\.managedObjectContext) var managedObjectContext
-    @FetchRequest(entity: InventoryDBItem.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \InventoryDBItem.name, ascending: true)]) var items: FetchedResults<InventoryDBItem>
+    @FetchRequest(entity: InventoryDBItem2.entity(), sortDescriptors: [NSSortDescriptor(keyPath: \InventoryDBItem2.name, ascending: true)]) var items: FetchedResults<InventoryDBItem2>
     
     var body: some View {
         VStack {
@@ -30,7 +30,7 @@ struct tayDBtestView: View {
                 let chosenPar = spiritCounts.randomElement()!
                 let chosenPrice = prices.randomElement()!
                 
-                let inventorySample = InventoryDBItem(context: self.managedObjectContext)
+                let inventorySample = InventoryDBItem2(context: self.managedObjectContext)
                 inventorySample.id = UUID()
                 inventorySample.name = chosenName
                 inventorySample.currentCount = Int16(chosenCurrentCount)
@@ -49,7 +49,7 @@ struct tayDBtestView: View {
 struct tayDBtestViewPreview : PreviewProvider {
     static var previews: some View {
         tayDBtestView()
-          .environmentObject(InventoryDBItem())
+          .environmentObject(InventoryDBItem2())
     }
 }
 #endif
