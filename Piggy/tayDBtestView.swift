@@ -36,8 +36,7 @@ struct tayDBtestView: View {
                 inventorySample.currentCount = Int16(chosenCurrentCount)
                 inventorySample.previousCount = Int16(chosenPreviousCount)
                 inventorySample.par = Int16(chosenPar)
-                inventorySample.price = NSDecimalNumber(value: chosenPrice)
-                
+                inventorySample.price = chosenPrice
                 try? self.managedObjectContext.save()
             }
         }
