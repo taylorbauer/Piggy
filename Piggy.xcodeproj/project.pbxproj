@@ -322,7 +322,9 @@
 				34F3EBA823F4546D00E61274 /* LocalDataBase.swift */,
 				3449D8482379C1580013B2FA /* MainMenu.swift */,
 				348E45D5244F59210069B51D /* tayDBtestView.swift */,
+				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
 				3420FAAC2457419100CF42EB /* AddInventoryItem.swift */,
+				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
 				34FE2FD6238ADA2800156DBB /* NewRecipe.swift */,
 				3424E1BA2395681400B501C0 /* NewInventoryPage.swift */,
 				3484ACF3239AEEED008F2334 /* EditInventory.swift */,
@@ -355,8 +357,6 @@
 				3462BF8223F23D7000E7640E /* wine_inventory.json */,
 				34228BF623E9D6C800CACF6A /* beer_inventory.json */,
 				34FE2FDC238C36EC00156DBB /* liquor_inventory.json */,
-				34FE2FD2238AD96E00156DBB /* ViewInventory.swift */,
-				34983D94243257C100B9788D /* ViewCurrentInventory.swift */,
 				34983D9F2432595C00B9788D /* InventoryReportRow.swift */,
 				34E7D506243BA40D00F802DA /* OrderTotalCounter.swift */,
 				349E2E442433B09000826005 /* OrderReportRow.swift */,
@@ -530,12 +530,12 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
-					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
-				},
-				{
 					ProductGroup = 34F3EBAD23F456CB00E61274 /* Products */;
 					ProjectRef = 34F3EBAC23F456CB00E61274 /* SQLite.xcodeproj */;
+				},
+				{
+					ProductGroup = 3469884723F480BA0056C2CA /* Products */;
+					ProjectRef = 3469884623F480BA0056C2CA /* SQLite.xcodeproj */;
 				},
 			);
 			projectRoot = "";
