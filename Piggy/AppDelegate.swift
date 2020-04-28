@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let container = NSPersistentContainer(name: "InventoryDBModel")
         container.loadPersistentStores { description, error in
             if let error = error {
-                // Add your error UI here
+                print("Encountered error loading InventoryDBModel database")
             }
         }
         return container

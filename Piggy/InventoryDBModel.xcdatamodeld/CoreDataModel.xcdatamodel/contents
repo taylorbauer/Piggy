@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="16119" systemVersion="19D76" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="InventoryDBItem" representedClassName="InventoryDBItem" syncable="YES" codeGenerationType="class">
+        <attribute name="attribute" optional="YES"/>
+        <attribute name="attribute1" optional="YES"/>
+        <attribute name="attribute2" optional="YES"/>
         <attribute name="category" optional="YES" attributeType="String"/>
         <attribute name="currentCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
@@ -18,8 +21,30 @@
         <attribute name="previousCount" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="price" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
     </entity>
+    <entity name="Recipes" representedClassName="Recipes" syncable="YES" codeGenerationType="class">
+        <attribute name="garnish" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="ingredient1metric" optional="YES" attributeType="String"/>
+        <attribute name="ingredient1name" optional="YES" attributeType="String"/>
+        <attribute name="ingredient1quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ingredient2metric" optional="YES" attributeType="String"/>
+        <attribute name="ingredient2name" optional="YES" attributeType="String"/>
+        <attribute name="ingredient2quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ingredient3metric" optional="YES" attributeType="String"/>
+        <attribute name="ingredient3name" optional="YES" attributeType="String"/>
+        <attribute name="ingredient3quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ingredient4metric" optional="YES" attributeType="String"/>
+        <attribute name="ingredient4name" optional="YES" attributeType="String"/>
+        <attribute name="ingredient4quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="ingredient5metric" optional="YES" attributeType="String"/>
+        <attribute name="ingredient5name" optional="YES" attributeType="String"/>
+        <attribute name="ingredient5quantity" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="method" optional="YES" attributeType="String"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+    </entity>
     <elements>
+        <element name="InventoryDBItem" positionX="-54" positionY="45" width="128" height="193"/>
         <element name="InventoryDBItem2" positionX="-63" positionY="36" width="128" height="148"/>
-        <element name="InventoryDBItem" positionX="-54" positionY="45" width="128" height="148"/>
+        <element name="Recipes" positionX="-54" positionY="90" width="128" height="328"/>
     </elements>
 </model>

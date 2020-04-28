@@ -59,9 +59,9 @@ struct AddInventoryItem: View {
                             TextField("Par", text: $par)
                                 .padding()
                                 .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
-                            Text("initial Count")
+                            Text("Initial Count")
                                 .font(.headline)
-                            TextField("initial Count", text: $initialCount)
+                            TextField("Initial Count", text: $initialCount)
                                 .padding()
                                 .background(Color(red: 0.88, green: 0.65, blue: 0.86, opacity: 0.3))
                         }
